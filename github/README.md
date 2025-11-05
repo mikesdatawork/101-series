@@ -3,6 +3,7 @@
 This directory contains cheat sheets for GitHub and related tools.
 
 ## Available Cheat Sheets
+- [101 GitHub Commands](101-GitHub-Commands.md) - Essential commands for Git and GitHub
 
 - [Coming soon] 101 GitHub CLI Commands
 - [Coming soon] 101 Git Commands
