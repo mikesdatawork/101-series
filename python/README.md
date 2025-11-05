@@ -3,6 +3,7 @@
 This directory contains cheat sheets for Python and related libraries.
 
 ## Available Cheat Sheets
+- [101 Python Commands](101-Python-Commands.md) - Essential commands, functions, and patterns for Python
 
 - [Coming soon] 101 Python Data Science Commands
 - [Coming soon] 101 Pandas Commands
