@@ -1,106 +1,124 @@
-# 101 Git Commands
+# 101 Git Commands  
+*Essential version control commands — grouped by workflow*
 
-The 101 most essential and widely used Git commands for version control, collaboration, branching, merging, and daily development workflows.
+### Setup & Configuration
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git init                                         | Initialize a new repository |
+| git clone https://github.com/user/repo.git      | Clone a remote repo |
+| git config --global user.name "Your Name"        | Set your name globally |
+| git config --global user.email "you@example.com" | Set your email globally |
+| git config --global core.editor code            | Set VS Code as default editor |
+| git config --global init.defaultBranch main     | Default branch = main |
+| git config --global alias.co checkout           | Create alias: git co |
+| git config --global alias.br branch              | Create alias: git br |
+| git config --global alias.ci commit              | Create alias: git ci |
+| git config --global alias.st status              | Create alias: git st |
 
-1. git init                           Initialize a new Git repository
-2. git clone url                      Clone a repository from remote
-3. git clone url dir                  Clone into specific directory
-4. git config --global user.name "Name"  Set global username
-5. git config --global user.email "email" Set global email
-6. git config --list                  List all Git configuration
-7. git status                         Check repository status
-8. git add file                       Stage a specific file
-9. git add .                          Stage all changes
-10. git add -A                        Stage all changes including deletions
-11. git rm file                       Unstage and remove file
-12. git rm --cached file              Remove from index but keep file
-13. git commit -m "Message"           Commit staged changes
-14. git commit -a -m "Message"        Stage and commit tracked files
-15. git log                           View commit history
-16. git log --oneline                 Compact commit history
-17. git log --graph --all --decorate  Visual branch history
-18. git log --author "Name"           Commits by author
-19. git log -p                        Commits with full diff
-20. git diff                          Show unstaged changes
-21. git diff --staged                 Show staged changes
-22. git diff HEAD                     Show all changes since last commit
-23. git diff branch1..branch2         Diff between branches
-24. git show commit                   Show details of a commit
-25. git branch                        List local branches
-26. git branch -a                     List all branches
-27. git branch new-branch             Create new branch
-28. git branch -d branch              Delete branch (safe)
-29. git branch -D branch              Force delete branch
-30. git checkout branch               Switch to existing branch
-31. git checkout -b new-branch        Create and switch to new branch
-32. git switch branch                 Switch branch (modern command)
-33. git switch -c new-branch          Create and switch (modern)
-34. git merge branch                  Merge branch into current
-35. git merge --no-ff branch          Force merge commit
-36. git merge --abort                 Abort current merge
-37. git stash                         Stash current changes
-38. git stash apply                   Re-apply latest stash
-39. git stash pop                     Apply and remove latest stash
-40. git stash list                    List all stashes
-41. git stash drop                    Drop latest stash
-42. git rebase branch                 Rebase current branch onto another
-43. git rebase -i HEAD~3              Interactive rebase last 3 commits
-44. git cherry-pick commit            Apply a specific commit
-45. git remote -v                     List remote repositories
-46. git remote add origin url         Add remote
-47. git remote remove name            Remove remote
-48. git fetch                         Fetch from remote
-49. git fetch --all                   Fetch all remotes
-50. git pull                          Fetch + merge
-51. git pull --rebase                 Fetch + rebase
-52. git push                          Push current branch
-53. git push origin branch            Push specific branch
-54. git push -u origin branch         Push and set upstream
-55. git push --force-with-lease       Safe force push
-56. git push --tags                   Push all tags
-57. git tag                           List tags
-58. git tag v1.0.0                    Create lightweight tag
-59. git tag -a v1.0.0 -m "Release"    Create annotated tag
-60. git tag -d v1.0.0                 Delete local tag
-61. git push origin :v1.0.0           Delete remote tag
-62. git checkout -- file              Discard changes in file
-63. git restore file                  Discard changes (modern)
-64. git restore --staged file         Unstage file (modern)
-65. git reset --soft HEAD~1           Undo last commit, keep changes staged
-66. git reset HEAD~1                  Undo commit, unstage changes
-67. git reset --hard HEAD~1           Undo commit and discard changes
-68. git clean -fd                     Remove untracked files and dirs
-69. git blame file                    Show who changed each line
-70. git bisect start                  Start bug hunting
-71. git bisect bad                    Mark current commit bad
-72. git bisect good v1.0              Mark known good commit
-73. git bisect reset                  End bisect
-74. git grep "pattern"                Search codebase
-75. git grep -n "pattern"             Search with line numbers
-76. git log --grep="fix"              Search commit messages
-77. git reflog                        Show reference log
-78. git rev-parse --abbrev-ref HEAD   Current branch name
-79. git remote show origin            Show remote details
-80. git fetch --prune                 Remove deleted remote branches
-81. git submodule init                Initialize submodules
-82. git submodule update              Update submodules
-83. git config --global alias.co checkout   Create alias
-84. git config --global alias.br branch
-85. git config --global alias.ci commit
-86. git config --global alias.st status
-87. git shortlog -sn                  Commits per author
-88. git count-objects -vH             Repository size info
-89. git gc --aggressive --prune=now   Clean and optimize repo
-90. git fsck                          Check repository integrity
-91. git archive --format=zip HEAD > archive.zip   Export repo
-92. git bundle create repo.bundle --all   Bundle entire repo
-93. git worktree add ../feature-work feature   Multiple working dirs
-94. git worktree list                 List worktrees
-95. git worktree remove path          Remove worktree
-96. git revert commit                 Create new commit that undoes changes
-97. git revert -n commit              Revert but don't commit
-98. git config --global core.editor "code --wait"   Set VS Code as editor
-99. git config --global init.defaultBranch main   Default branch name
-100. git config --global pull.rebase true        Always rebase on pull
-101. git --version                    Show Git version
+### Daily Workflow
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git status                                       | Show current state |
+| git add file.txt                                 | Stage a file |
+| git add .                                        | Stage all changes |
+| git add -A                                       | Stage everything (new/modified/deleted) |
+| git commit -m "Fix bug"                          | Commit with message |
+| git commit -am "Update docs"                     | Skip staging for tracked files |
+| git diff                                         | See unstaged changes |
+| git diff --staged                                | See staged changes |
+| git restore file.txt                             | Discard changes in file |
+| git restore --staged file.txt                    | Unstage a file |
+
+### Branching & Switching
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git branch                                       | List local branches |
+| git branch -a                                    | List all branches |
+| git branch feature/login                         | Create new branch |
+| git checkout feature/login                       | Switch to branch |
+| git checkout -b feature/api                      | Create + switch |
+| git switch feature/login                         | Switch (modern) |
+| git switch -c feature/api                        | Create + switch (modern) |
+| git branch -d feature/old                        | Delete merged branch |
+| git branch -D feature/old                        | Force delete branch |
+
+### Remote & Sync
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git remote -v                                    | List remotes |
+| git remote add origin url                        | Add remote |
+| git fetch                                        | Download latest from remote |
+| git fetch --prune                                | Remove deleted remote branches |
+| git pull                                         | Fetch + merge |
+| git pull --rebase                                | Fetch + rebase |
+| git push                                         | Push current branch |
+| git push -u origin feature/login                 | Push and set upstream |
+| git push --force-with-lease                      | Safe force push |
+
+### History & Inspection
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git log                                          | Full commit history |
+| git log --oneline                                | One line per commit |
+| git log --graph --all --decorate                 | Visual branch map |
+| git log -p                                       | Show diffs in history |
+| git show abc123                                  | Details of one commit |
+| git blame file.py                                | Who changed each line |
+| git reflog                                       | Recover lost commits |
+| git shortlog -sn                                 | Commits per author |
+
+### Stashing & Work-in-Progress
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git stash                                        | Save changes temporarily |
+| git stash -m "WIP: login form"                   | Stash with message |
+| git stash list                                   | List all stashes |
+| git stash apply                                  | Re-apply latest stash |
+| git stash pop                                    | Apply and remove stash |
+| git stash drop                                   | Delete latest stash |
+| git stash show -p                                | See what’s in latest stash |
+
+### Undoing & Recovery
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git reset --soft HEAD~1                          | Undo commit, keep changes staged |
+| git reset HEAD~1                                 | Undo commit, unstage changes |
+| git reset --hard HEAD~1                          | Discard last commit completely |
+| git revert abc123                                | Safely undo a commit (creates new one) |
+| git clean -fd                                    | Remove untracked files/folders |
+| git checkout HEAD -- file.txt                    | Restore file to last commit |
+
+### Advanced Operations
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git merge feature                                | Merge branch |
+| git merge --no-ff feature                        | Force merge commit |
+| git merge --abort                                | Cancel conflicted merge |
+| git rebase main                                  | Replay commits on top of main |
+| git rebase -i HEAD~4                             | Interactive rebase (squash/edit) |
+| git cherry-pick abc123                           | Apply one commit from elsewhere |
+| git bisect start / bad / good v1.0 / reset       | Hunt down bugs fast |
+
+### Tags & Releases
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git tag                                          | List tags |
+| git tag v1.2.0                                   | Lightweight tag |
+| git tag -a v1.2.0 -m "Stable release"           | Annotated tag |
+| git push origin v1.2.0                           | Push single tag |
+| git push --tags                                  | Push all tags |
+| git tag -d v1.2.0                                 | Delete local tag |
+| git push origin :v1.2.0                          | Delete remote tag |
+
+### Bonus Power Tools
+| Command                                          | Description |
+|--------------------------------------------------|-------------|
+| git worktree add ../bugfix bugfix                | Multiple folders, same repo |
+| git archive --format=zip HEAD > project.zip      | Export clean zip |
+| git gc --aggressive --prune=now                  | Optimize repo |
+| git fsck                                         | Check for corruption |
+| git bundle create backup.bundle --all            | Full repo backup file |
+| git --version                                    | Show Git version |
+
+**Total: 101 essential Git commands — now grouped and ready for daily use**
 
