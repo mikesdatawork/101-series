@@ -24,6 +24,7 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [Coming soon] 101 Windows PowerShell Commands
 
 ### Programming Languages
+* [101 Pandas Commands](programming-languages/101-Pandas-Commands.md)
 * [101 NumPy Commands](programming-languages/101-NumPy-Commands.md)
 - [Coming soon] 101 Python Data Commands
 - [Coming soon] 101 JavaScript Commands
