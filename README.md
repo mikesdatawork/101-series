@@ -56,14 +56,13 @@ A comprehensive collection of the 101 most useful commands for various programmi
 ### Python
 - [Python Commands](python/101-Python-Commands.md)
 
-## How to Use
 
-To create a new cheat sheet, use the generator script:
+## About These Cheat Sheets
 
-```bash
-./scripts/generate_cheatsheet.sh -c Python -t programming-languages
-```
+Each cheat sheet in this collection contains the 101 most commonly used commands for its respective technology. These aren't just any commands - they're the ones that developers, data scientists, and engineers actually use day-to-day in real-world scenarios.
+
+The focus is on practical, high-impact commands that you'll find yourself reaching for repeatedly, whether you're debugging issues, optimizing workflows, or building production systems.
 
 ## License
 
-[Choose an appropriate license for your project]
+This project is freely available for anyone to use, modify, and distribute. Feel free to incorporate these cheat sheets into your projects, share them with your team, or use them for educational purposes.
