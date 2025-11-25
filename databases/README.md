@@ -5,6 +5,7 @@ Commands and operations for various database systems, including SQL, NoSQL, vect
 ## Available Cheat Sheets
 
 - [101 ChromaDB Commands](101-ChromaDB-Commands.md) - Essential commands for Chroma Vector Database
+- [101 Elasticsearch Commands](101-Elasticsearch-Commands.md) - Essential commands for Elasticsearch search engine
 - [101 MongoDB Commands](101-MongoDB-Commands.md) - Essential commands for MongoDB
 - [101 Pinecone Commands](101-Pinecone-Commands.md) - Essential commands for Pinecone Vector Database
 - [101 PostgreSQL Commands](101-PostgreSQL-Commands.md) - Essential commands for PostgreSQL
