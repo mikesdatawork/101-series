@@ -31,6 +31,7 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [Pinecone Commands](databases/101-Pinecone-Commands.md)
 - [PostgreSQL Commands](databases/101-PostgreSQL-Commands.md)
 - [Redis Commands](databases/101-Redis-Commands.md)
+- [SQLite Commands](databases/101-SQLite-Commands.md)
 ### GitHub
 - [Git Commands](github/101-Git-Commands.md)
 - [GitHub CLI Commands](github/101-GitHub-CLI-Commands.md)

@@ -11,6 +11,7 @@ Commands and operations for various database systems, including SQL, NoSQL, vect
 - [101 Pinecone Commands](101-Pinecone-Commands.md) - Essential commands for Pinecone Vector Database
 - [101 PostgreSQL Commands](101-PostgreSQL-Commands.md) - Essential commands for PostgreSQL
 - [101 Redis Commands](101-Redis-Commands.md) - Essential commands for Redis in-memory database
+- [101 SQLite Commands](101-SQLite-Commands.md) - Essential commands for SQLite embedded database
 
 ## Purpose
 
