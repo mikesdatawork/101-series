@@ -14,11 +14,7 @@ Perfect for:
 ## Full Index of Cheat Sheets
 
 ### AI Tools
-- [101-ChromaDB-Commands](data-science/101-ChromaDB-Commands.md) – Vector database for embeddings
-- [101-LangChain-Commands](ai-tools/101-LangChain-Commands.md) – LLM chaining & agents
-- [101-LlamaIndex-Commands](ai-tools/101-LlamaIndex-Commands.md) – RAG & indexing
-- [101-OpenAI-API-Commands](ai-tools/101-OpenAI-API-Commands.md) – GPT integration
-- [101-Pinecone-Commands](data-science/101-Pinecone-Commands.md) – Managed vector search
+- [101-HuggingFace-Transformers-Commands](llm/101-HuggingFace-Transformers-Commands.md) – 200+ essential commands (LoRA/QLoRA, quantization, inference, multimodal)
 
 ### Cloud Services
 - [101-AWS-CLI-Commands](cloud-services/101-AWS-CLI-Commands.md)
