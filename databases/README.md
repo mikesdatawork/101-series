@@ -9,6 +9,7 @@ Commands and operations for various database systems, including SQL, NoSQL, vect
 - [101 Elasticsearch Commands](101-Elasticsearch-Commands.md) - Essential commands for Elasticsearch search engine
 - [101 MongoDB Commands](101-MongoDB-Commands.md) - Essential commands for MongoDB
 - [101 MySQL Commands](101-MySQL-Commands.md) - Essential commands for MySQL relational database
+- [101 Neo4j Commands](101-Neo4j-Commands.md) - Essential commands for Neo4j graph database
 - [101 Pinecone Commands](101-Pinecone-Commands.md) - Essential commands for Pinecone Vector Database
 - [101 PostgreSQL Commands](101-PostgreSQL-Commands.md) - Essential commands for PostgreSQL
 - [101 Redis Commands](101-Redis-Commands.md) - Essential commands for Redis in-memory database
