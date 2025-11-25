@@ -7,6 +7,7 @@ Commands and operations for various database systems, including SQL, NoSQL, vect
 - [101 ChromaDB Commands](101-ChromaDB-Commands.md) - Essential commands for Chroma Vector Database
 - [101 DuckDB Commands](101-DuckDB-Commands.md) - Essential commands for DuckDB analytical database
 - [101 Elasticsearch Commands](101-Elasticsearch-Commands.md) - Essential commands for Elasticsearch search engine
+- [101 Milvus Commands](101-Milvus-Commands.md) - Essential commands for Milvus vector database
 - [101 MongoDB Commands](101-MongoDB-Commands.md) - Essential commands for MongoDB
 - [101 MySQL Commands](101-MySQL-Commands.md) - Essential commands for MySQL relational database
 - [101 Neo4j Commands](101-Neo4j-Commands.md) - Essential commands for Neo4j graph database

@@ -27,6 +27,7 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [ChromaDB Commands](databases/101-ChromaDB-Commands.md)
 - [DuckDB Commands](databases/101-DuckDB-Commands.md)
 - [Elasticsearch Commands](databases/101-Elasticsearch-Commands.md)
+- [Milvus Commands](databases/101-Milvus-Commands.md)
 - [MongoDB Commands](databases/101-MongoDB-Commands.md)
 - [MySQL Commands](databases/101-MySQL-Commands.md)
 - [Neo4j Commands](databases/101-Neo4j-Commands.md)
