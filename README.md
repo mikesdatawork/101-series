@@ -14,6 +14,8 @@ Perfect for:
 ## Full Index of Cheat Sheets
 
 ### AI Tools
+- [101-Llama.cpp-Commands](llm/101-Llama.cpp-Commands.md) - 220+ commands: run 70B on laptop/phone, GGUF quant, LLaVA, server mode
+
 - [101-vLLM-Commands](llm/101-vLLM-Commands.md) - 200+ commands: fastest LLM serving (70B at 100+ t/s)
 
 - [101-HuggingFace-Transformers-Commands](llm/101-HuggingFace-Transformers-Commands.md) - 250+ commands: pipelines, LoRA/QLoRA, Flash Attention, multimodal, deployment
