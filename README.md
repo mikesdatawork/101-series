@@ -3,7 +3,6 @@
 A comprehensive collection of the 101 most useful commands for various programming languages, tools, and technologies.
 
 ## Project Structure
-
 ```
 101-series/
 ├── README.md
@@ -29,6 +28,7 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [MongoDB Commands](databases/101-MongoDB-Commands.md)
 - [Pinecone Commands](databases/101-Pinecone-Commands.md)
 - [PostgreSQL Commands](databases/101-PostgreSQL-Commands.md)
+- [Redis Commands](databases/101-Redis-Commands.md)
 
 ### GitHub
 - [Git Commands](github/101-Git-Commands.md)
