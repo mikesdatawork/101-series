@@ -41,6 +41,7 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [GitHub Commands](github/101-GitHub-Commands.md)
 
 ### IDEs
+- [PyCharm Commands](ides/101-PyCharm-Commands.md)
 - [VS Code Commands](ides/101-VS-Code-Commands.md)
 
 ### Machine Learning

@@ -1,24 +1,18 @@
-# IDE Command Cheat Sheets
+# IDEs & Editors Command Cheat Sheets
 
-Integrated Development Environment commands, shortcuts, and configuration for various code editors and IDEs.
+Essential keyboard shortcuts and productivity commands for the most popular development environments.
 
 ## Available Cheat Sheets
 
-- [101 VS Code Commands](101-VS-Code-Commands.md) - Essential commands for Visual Studio Code
+- [101 PyCharm Commands](101-PyCharm-Commands.md) - Comprehensive shortcuts for JetBrains PyCharm (Community & Professional)
+- [101 VS Code Commands](101-VS-Code-Commands.md) - Essential shortcuts for Visual Studio Code
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands for IDEs. Each cheat sheet includes:
-
-- Command syntax and usage
-- Common use cases and examples
-- Tips and best practices
-- Additional resources for further learning
+These cheat sheets provide quick reference for the most commonly used and essential commands in modern IDEs and editors.
 
 ## Target Audience
 
-- Software developers
-- Web developers
-- Data scientists
-- Students and learners
-- Anyone using code editors
+- Developers switching between IDEs
+- Teams standardizing workflows
+- Power users seeking maximum efficiency
