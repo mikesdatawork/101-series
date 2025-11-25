@@ -19,3 +19,4 @@ Thumbs.db
 *.log
 # Ignore setup script files (s followed by 3 digits and underscore)
 s[0-9][0-9][0-9]_*
+CHEATSHEET-CREATION-GUIDE.md
