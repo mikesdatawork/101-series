@@ -14,6 +14,8 @@ Perfect for:
 ## Full Index of Cheat Sheets
 
 ### AI Tools
+- [101-vLLM-Commands](llm/101-vLLM-Commands.md) - 200+ commands: fastest LLM serving (70B at 100+ t/s)
+
 - [101-HuggingFace-Transformers-Commands](llm/101-HuggingFace-Transformers-Commands.md) - 250+ commands: pipelines, LoRA/QLoRA, Flash Attention, multimodal, deployment
 
 - [101-HuggingFace-Transformers-Commands](llm/101-HuggingFace-Transformers-Commands.md) – 200+ essential commands (LoRA/QLoRA, quantization, inference, multimodal)
