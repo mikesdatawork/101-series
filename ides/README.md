@@ -4,12 +4,13 @@ Essential keyboard shortcuts and productivity commands for the most popular deve
 
 ## Available Cheat Sheets
 
+- [101 JupyterLab Commands](101-JupyterLab-Commands.md) - Complete JupyterLab keyboard shortcuts and workflow
 - [101 PyCharm Commands](101-PyCharm-Commands.md) - Comprehensive shortcuts for JetBrains PyCharm
 - [101 VS Code Commands](101-VS-Code-Commands.md) - Essential shortcuts for Visual Studio Code
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands in modern IDEs.
+These cheat sheets provide quick reference for the most commonly used and essential commands in modern IDEs and editors.
 
 ## Target Audience
 
