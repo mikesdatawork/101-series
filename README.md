@@ -5,7 +5,6 @@ Welcome to the **101-Series** — the fastest way to master any tech stack.
 Each file contains the **101 (or more) most essential commands, concepts, and patterns** you actually use every day — distilled into clean, searchable, mobile-optimized Markdown tables. No fluff. No backticks in cells. Just pure signal.
 
 Perfect for:
-- Interview prep
 - Onboarding new team members
 - Daily reference during development
 - Switching between tools quickly
