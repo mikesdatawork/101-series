@@ -1,16 +1,25 @@
-# LLM Command Cheat Sheets
+# Large Language Model (LLM) Command Cheat Sheets
 
-This directory contains cheat sheets for Large Language Models (LLMs) and related tools.
+Commands, techniques, and operations for working with large language models, including training, fine-tuning, deployment, and evaluation.
+
+## Directory Structure
+
+This directory contains subdirectories for different aspects of LLM work:
+
+- data-engineering/ - Data preparation and processing for LLMs
+- deployment/ - Model deployment and serving
+- evaluation/ - Model evaluation and benchmarking
+- fine-tuning/ - Fine-tuning techniques and methods
+- inference/ - Inference optimization and serving
+- training/ - Model training and pre-training
 
 ## Available Cheat Sheets
 
-- [Coming soon] 101 LLM Prompting Techniques
-- [Coming soon] 101 Hugging Face Commands
-- [Coming soon] 101 OpenAI API Commands
+Cheat sheets will be organized in the subdirectories above as they are created.
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands and techniques for working with LLMs. Each cheat sheet includes:
+These cheat sheets provide quick reference for the most commonly used and essential commands for LLM work. Each cheat sheet includes:
 
 - Command syntax and usage
 - Common use cases and examples
@@ -19,8 +28,8 @@ These cheat sheets provide quick reference for the most commonly used and essent
 
 ## Target Audience
 
-- AI engineers
-- NLP specialists
-- Prompt engineers
-- Application developers
+- Machine learning engineers
+- Research scientists
+- AI practitioners
+- NLP engineers
 - Students and learners

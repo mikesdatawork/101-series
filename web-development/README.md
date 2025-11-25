@@ -4,7 +4,8 @@ Front-end, back-end, API, testing, and deployment commands for web technologies.
 
 ## Available Cheat Sheets
 
-- [Coming soon] Add cheat sheets to this category
+- [101 REST API Development Commands](101-REST-API-Development-Commands.md) - Essential commands for REST API development
+- [101 Swagger OpenAPI Commands](101-Swagger-OpenAPI-Commands.md) - Essential commands for Swagger and OpenAPI
 
 ## Purpose
 
@@ -17,8 +18,8 @@ These cheat sheets provide quick reference for the most commonly used and essent
 
 ## Target Audience
 
-- Developers
-- System administrators
-- DevOps engineers
-- Data scientists
-- Students and learners
+- Web developers
+- Backend developers
+- Frontend developers
+- API developers
+- Full-stack developers

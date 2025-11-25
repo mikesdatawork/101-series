@@ -3,12 +3,15 @@
 This directory contains cheat sheets for Python and related libraries.
 
 ## Available Cheat Sheets
-- [101 Python Commands](101-Python-Commands.md) - Essential commands, functions, and patterns for Python
 
-- [Coming soon] 101 Python Data Science Commands
-- [Coming soon] 101 Pandas Commands
-- [Coming soon] 101 NumPy Commands
-- [Coming soon] 101 Python CLI Commands
+- [101 Django Commands](101-Django-Commands.md) - Essential commands for Django web framework
+- [101 FastAPI Commands](101-FastAPI-Commands.md) - Essential commands for FastAPI framework
+- [101 Flask Commands](101-Flask-Commands.md) - Essential commands for Flask framework
+- [101 Python Async Commands](101-Python-Async-Commands.md) - Essential commands for Python async programming
+- [101 Python CLI Scripting Commands](101-Python-CLI-Scripting-Commands.md) - Essential commands for Python CLI scripting
+- [101 Python Commands](101-Python-Commands.md) - Essential commands, functions, and patterns for Python
+- [101 Python Debugging Commands](101-Python-Debugging-Commands.md) - Essential commands for Python debugging
+- [101 Python Testing Commands](101-Python-Testing-Commands.md) - Essential commands for Python testing
 
 ## Purpose
 

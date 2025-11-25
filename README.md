@@ -18,6 +18,12 @@ A comprehensive collection of the 101 most useful commands for various programmi
 
 ## Available Cheat Sheets
 
+### AI Tools
+- [VS Code Commands](ai-tools/101-VS-Code-Commands.md)
+
+### Cloud Services
+- [AWS Commands](cloud-services/101-AWS-Commands.md)
+
 ### Databases
 - [ChromaDB Commands](databases/101-ChromaDB-Commands.md)
 - [MongoDB Commands](databases/101-MongoDB-Commands.md)
@@ -28,6 +34,9 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [Git Commands](github/101-Git-Commands.md)
 - [GitHub CLI Commands](github/101-GitHub-CLI-Commands.md)
 - [GitHub Commands](github/101-GitHub-Commands.md)
+
+### IDEs
+- [VS Code Commands](ides/101-VS-Code-Commands.md)
 
 ### Machine Learning
 - [Advanced XLA Optimizations](machine-learning/101-Advanced-XLA-Optimizations.md)
@@ -54,8 +63,18 @@ A comprehensive collection of the 101 most useful commands for various programmi
 - [Pandas Commands](programming-languages/101-Pandas-Commands.md)
 
 ### Python
+- [Django Commands](python/101-Django-Commands.md)
+- [FastAPI Commands](python/101-FastAPI-Commands.md)
+- [Flask Commands](python/101-Flask-Commands.md)
+- [Python Async Commands](python/101-Python-Async-Commands.md)
+- [Python CLI Scripting Commands](python/101-Python-CLI-Scripting-Commands.md)
 - [Python Commands](python/101-Python-Commands.md)
+- [Python Debugging Commands](python/101-Python-Debugging-Commands.md)
+- [Python Testing Commands](python/101-Python-Testing-Commands.md)
 
+### Web Development
+- [REST API Development Commands](web-development/101-REST-API-Development-Commands.md)
+- [Swagger OpenAPI Commands](web-development/101-Swagger-OpenAPI-Commands.md)
 
 ## About These Cheat Sheets
 

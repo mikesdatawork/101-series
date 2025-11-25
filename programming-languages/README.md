@@ -4,7 +4,8 @@ Language-specific syntax, operations, data structures, and best practices.
 
 ## Available Cheat Sheets
 
-- [Coming soon] Add cheat sheets to this category
+- [101 NumPy Commands](101-NumPy-Commands.md) - Essential commands for NumPy
+- [101 Pandas Commands](101-Pandas-Commands.md) - Essential commands for Pandas
 
 ## Purpose
 

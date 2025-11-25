@@ -1,14 +1,14 @@
 # DevOps Command Cheat Sheets
 
-Commands for containerization, orchestration, CI/CD, and infrastructure management.
+Commands for containerization, orchestration, CI/CD, infrastructure as code, and deployment automation.
 
 ## Available Cheat Sheets
 
-- [Coming soon] Add cheat sheets to this category
+Cheat sheets for DevOps tools will be added here as they are created.
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands for devops. Each cheat sheet includes:
+These cheat sheets provide quick reference for the most commonly used and essential commands for DevOps. Each cheat sheet includes:
 
 - Command syntax and usage
 - Common use cases and examples
@@ -17,8 +17,8 @@ These cheat sheets provide quick reference for the most commonly used and essent
 
 ## Target Audience
 
-- Developers
-- System administrators
 - DevOps engineers
-- Data scientists
-- Students and learners
+- Site reliability engineers
+- System administrators
+- Cloud engineers
+- Platform engineers

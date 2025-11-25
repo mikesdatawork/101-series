@@ -4,7 +4,7 @@ This directory contains cheat sheets for various AI tools, platforms, and framew
 
 ## Available Cheat Sheets
 
-- [Coming soon] 101 AI Tool Commands
+- [101 VS Code Commands](101-VS-Code-Commands.md) - Essential commands for Visual Studio Code
 
 ## Purpose
 

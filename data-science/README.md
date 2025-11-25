@@ -1,10 +1,10 @@
 # Data Science Command Cheat Sheets
 
-Commands for data manipulation, analysis, visualization, and machine learning.
+Commands and operations for data analysis, visualization, statistical modeling, and data processing.
 
 ## Available Cheat Sheets
 
-- [Coming soon] Add cheat sheets to this category
+Cheat sheets for data science tools and libraries will be added here as they are created.
 
 ## Purpose
 
@@ -17,8 +17,8 @@ These cheat sheets provide quick reference for the most commonly used and essent
 
 ## Target Audience
 
-- Developers
-- System administrators
-- DevOps engineers
 - Data scientists
+- Data analysts
+- Machine learning engineers
+- Statisticians
 - Students and learners
