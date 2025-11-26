@@ -6,8 +6,8 @@ Essential command references and concepts for building, cleaning, transforming, 
 
 - [101 Data Preprocessing Commands](101-Data-Preprocessing-Commands.md)
 - [101 Data Cleaning Commands](101-Data-Cleaning-Commands.md)
-- [101 Data Transformation Commands](101-Data-Transformation-Commands.md) - Reshaping, window functions, groupby mastery, joins
-- [101 Data Pipeline Commands](101-Data-Pipeline-Commands.md) - [Coming soon]
+- [101 Data Transformation Commands](101-Data-Transformation-Commands.md)
+- [101 Data Pipeline Commands](101-Data-Pipeline-Commands.md) – Orchestration, ingestion, dbt, testing, monitoring
 
 ## Purpose
 
