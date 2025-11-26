@@ -1,20 +1,14 @@
-# LLM Data Engineering Command Cheat Sheets
+# Data Engineering Cheat Sheets
 
-This directory contains cheat sheets for data engineering tasks related to LLMs.
+Essential command references and concepts for building, cleaning, transforming, and orchestrating data pipelines in modern LLM and ML workflows.
 
 ## Available Cheat Sheets
 
-- [Coming soon] 101 Data Preprocessing Commands
-- [Coming soon] 101 Data Cleaning Commands
-- [Coming soon] 101 Data Transformation Commands
-- [Coming soon] 101 Data Pipeline Commands
+- [101 Data Preprocessing Commands](101-Data-Preprocessing-Commands.md) - Complete guide to cleaning, scaling, encoding, and feature engineering
+- [101 Data Cleaning Commands](101-Data-Cleaning-Commands.md) - [Coming soon]
+- [101 Data Transformation Commands](101-Data-Transformation-Commands.md) - [Coming soon]
+- [101 Data Pipeline Commands](101-Data-Pipeline-Commands.md) - [Coming soon]
 
-## Common Data Engineering Tasks for LLMs
+## Purpose
 
-- Data collection and scraping
-- Text extraction and cleaning
-- Tokenization and normalization
-- Data augmentation
-- Dataset creation and formatting
-- Data versioning and management
-- ETL pipelines for text data
+These cheat sheets provide quick, pasteable references for the most common and critical operations in data engineering pipelines, with emphasis on pandas, Polars, scikit-learn, and production best practices.
