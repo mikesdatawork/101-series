@@ -102,7 +102,7 @@ The only cheat sheet that shows exactly how top LLM teams (Anthropic, Cohere, Mi
 | canary deployment with Kubernetes | Zero-downtime |
 | pii redaction + prompt injection detection | Safety |
 
-### Final LLM Data Checklist (Used by Every Serious Team)
+### Final LLM Data Checklist (Used by Dedicated Teams)
 - [ ] Exact + near deduplication done  
 - [ ] Language, length, quality filters applied  
 - [ ] PII / toxic / copyrighted content removed  
