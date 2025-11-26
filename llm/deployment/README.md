@@ -1,20 +1,10 @@
-# LLM Deployment Command Cheat Sheets
+# LLM Deployment – 101 Series
 
-This directory contains cheat sheets for deploying Large Language Models.
+Production commands for serving, scaling, and monitoring LLMs in 2025.
 
 ## Available Cheat Sheets
 
-- [Coming soon] 101 Model Serving Commands
-- [Coming soon] 101 Containerization Commands
-- [Coming soon] 101 Cloud Deployment Commands
-- [Coming soon] 101 Monitoring Commands
+1. **[101 LLM Deployment Commands](101-LLM-Deployment-Commands.md)**  
+   → vLLM, TGI, Ollama, Docker/K8s, FastAPI, monitoring, quantization, security
 
-## Common Deployment Tasks
-
-- Model serving and API development
-- Containerization with Docker
-- Orchestration with Kubernetes
-- Cloud deployment (AWS, Azure, GCP)
-- Edge deployment
-- Monitoring and observability
-- Scalability and load balancing
+The missing manual for turning models into reliable APIs and apps.
