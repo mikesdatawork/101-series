@@ -1,8 +1,13 @@
 # LLM-Specific Data Pipelines – 101 Series
 
-The exact playbooks used by every serious LLM team in 2025.
+Real production playbooks used by frontier teams.
 
-## 101 LLM Data Pipelines
-- **[101 LLM Data Pipelines](101-LLM-Data-Pipelines.md)** – From raw web-scale text to tokenized, deduplicated, filtered, and production-ready training data.
+## Available Cheat Sheets
 
-This is the missing manual no one published — until now.
+1. **[101 LLM Data Pipelines](101-LLM-Data-Pipelines.md)**  
+   → Web-scale pretraining & fine-tuning data (dedupe, filtering, tokenization)
+
+2. **[101 RAG Pipelines](101-RAG-Pipelines.md)**  
+   → Full production Retrieval-Augmented Generation (ingestion → retrieval → synthesis → eval)
+
+These are the only two data playbooks that matter for serious LLM work in 2025.
