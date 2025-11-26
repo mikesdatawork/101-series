@@ -1,0 +1,1 @@
+-- MySQL\nSELECT VERSION();
