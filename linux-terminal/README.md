@@ -10,6 +10,7 @@ This directory contains cheat sheets for various Linux terminal utilities and co
 - [101 Linux Terminal Editor Nano Commands](101-Linux-Terminal-Editor-Nano-Commands.md) - Essential commands for the simple terminal text editor nano
 - [101 Linux Terminal Editor Vim-Neovim Commands](101-Linux-Terminal-Editor-Vim-Neovim-Commands.md) - Powerful modal text editor with extensive keyboard commands
 - [101 Linux Terminal Editor Emacs Commands](101-Linux-Terminal-Editor-Emacs-Commands.md) - Highly extensible text editor with Lisp-based configuration
+- [101 Linux Terminal Editor Micro Commands](101-Linux-Terminal-Editor-Micro-Commands.md) - Modern intuitive text editor with Nano-like keybindings
 
 ## Purpose
 

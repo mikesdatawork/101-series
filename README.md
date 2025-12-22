@@ -82,6 +82,7 @@ Perfect for:
 - [101-CSS-Commands](web-development/101-CSS-Commands.md)
 
 ### Linux Terminal
+- [Linux Terminal Editor Micro Commands](linux-terminal/101-Linux-Terminal-Editor-Micro-Commands.md)
 - [Linux Terminal Editor Emacs Commands](linux-terminal/101-Linux-Terminal-Editor-Emacs-Commands.md)
 - [Linux Vim-Neovim Commands](linux-terminal/101-Linux-Terminal-Editor-Vim-Neovim-Commands.md)
 - [Linux Nano Commands](linux-terminal/101-Linux-Terminal-Editor-Nano-Commands.md)
