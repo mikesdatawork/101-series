@@ -7,6 +7,7 @@ This directory contains cheat sheets for various Linux terminal utilities and co
 - [101 Linux Tree Commands](101-Linux-Tree-Commands.md) - Comprehensive guide to the tree utility for directory visualization
 - [101 Linux Xclip Commands](101-Linux-Xclip-Commands.md) - Essential commands for clipboard operations in X11 environments
 - [101 Linux Xsel Commands](101-Linux-Xsel-Commands.md) - Alternative clipboard utility with advanced selection handling
+- [101 Linux Nano Commands](101-Linux-Nano-Commands.md) - Essential commands for the simple terminal text editor nano
 
 ## Purpose
 
@@ -19,4 +20,3 @@ These cheat sheets provide quick reference for powerful Linux terminal tools tha
 - DevOps engineers building pipelines
 - Power users mastering command-line tools
 - Anyone using Linux terminals daily
-

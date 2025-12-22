@@ -82,6 +82,7 @@ Perfect for:
 - [101-CSS-Commands](web-development/101-CSS-Commands.md)
 
 ### Linux Terminal
+- [Linux Nano Commands](linux-terminal/101-Linux-Nano-Commands.md)
 - [Linux Xsel Commands](linux-terminal/101-Linux-Xsel-Commands.md)
 - [Linux Xclip Commands](linux-terminal/101-Linux-Xclip-Commands.md)
 - [Linux Tree Commands](linux-terminal/101-Linux-Tree-Commands.md)
@@ -113,7 +114,4 @@ See [CHEATSHEET-CREATION-GUIDE.md](CHEATSHEET-CREATION-GUIDE.md) for the exact t
 - Open an issue if your favorite tool is missing!
 
 **Your daily workflow just got faster.**
-
-### IDEs and Editors
-- [Linux Nano Commands](ides/101-Linux-Nano-Commands.md)
 
