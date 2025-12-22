@@ -9,6 +9,7 @@ This directory contains cheat sheets for AWS services, focusing on CLI commands 
 - [101 AWS DynamoDB Commands](101-AWS-DynamoDB-Commands.md) - NoSQL database operations with Amazon DynamoDB
 - [101 AWS SageMaker Commands](101-AWS-SageMaker-Commands.md) - End-to-end ML platform with Amazon SageMaker
 - [101 AWS Glue Commands](101-AWS-Glue-Commands.md) - Serverless ETL and data cataloging with AWS Glue
+- [101 AWS EMR Commands](101-AWS-EMR-Commands.md) - Big data processing with Amazon EMR
 
 ## Purpose
 
