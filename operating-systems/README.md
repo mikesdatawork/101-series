@@ -1,26 +1,20 @@
 # Operating Systems Command Cheat Sheets
 
-Terminal and command-line interface commands for system management, file operations, and process control.
+This directory contains cheat sheets for various operating system utilities and commands.
 
 ## Available Cheat Sheets
 
-- [101 Linux Terminal Commands](101-Linux-Terminal-Commands.md) - Essential commands for Linux-based systems
-- [Coming soon] 101 macOS Terminal Commands - Essential commands for macOS Terminal
-- [Coming soon] 101 Windows PowerShell Commands - Essential commands for Windows PowerShell
+- [101 Linux Tree Commands](101-Linux-Tree-Commands.md) - Comprehensive guide to the tree utility for directory structure visualization
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands for operating systems. Each cheat sheet includes:
-
-- Command syntax and usage
-- Common use cases and examples
-- Tips and best practices
-- Additional resources for further learning
+These cheat sheets provide quick reference for the most commonly used and essential commands in operating systems, focusing on utilities that enhance productivity in terminal environments.
 
 ## Target Audience
 
-- Developers
-- System administrators
-- DevOps engineers
-- Data scientists
-- Students and learners
+- System administrators managing file systems
+- Developers working with directory structures
+- DevOps engineers automating workflows
+- IT professionals troubleshooting issues
+- Anyone using command-line interfaces
+
