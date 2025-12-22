@@ -6,6 +6,7 @@ This directory contains cheat sheets for various Linux terminal utilities and co
 
 - [101 Linux Tree Commands](101-Linux-Tree-Commands.md) - Comprehensive guide to the tree utility for directory visualization
 - [101 Linux Xclip Commands](101-Linux-Xclip-Commands.md) - Essential commands for clipboard operations in X11 environments
+- [101 Linux Xsel Commands](101-Linux-Xsel-Commands.md) - Alternative clipboard utility with advanced selection handling
 
 ## Purpose
 
