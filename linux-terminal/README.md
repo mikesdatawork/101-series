@@ -11,6 +11,7 @@ This directory contains cheat sheets for various Linux terminal utilities and co
 - [101 Linux Terminal Editor Vim-Neovim Commands](101-Linux-Terminal-Editor-Vim-Neovim-Commands.md) - Powerful modal text editor with extensive keyboard commands
 - [101 Linux Terminal Editor Emacs Commands](101-Linux-Terminal-Editor-Emacs-Commands.md) - Highly extensible text editor with Lisp-based configuration
 - [101 Linux Terminal Editor Micro Commands](101-Linux-Terminal-Editor-Micro-Commands.md) - Modern intuitive text editor with Nano-like keybindings
+- [101 Linux Terminal Editor Helix Commands](101-Linux-Terminal-Editor-Helix-Commands.md) - Modern modal text editor with built-in LSP and Tree-sitter
 
 ## Purpose
 
