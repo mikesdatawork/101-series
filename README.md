@@ -121,6 +121,7 @@ See [CHEATSHEET-CREATION-GUIDE.md](CHEATSHEET-CREATION-GUIDE.md) for the exact t
 
 
 ### AWS
+- [AWS DynamoDB Commands](cloud-services/aws/101-AWS-DynamoDB-Commands.md)
 - [AWS Lambda Commands](cloud-services/aws/101-AWS-Lambda-Commands.md)
 - [AWS S3 Commands](cloud-services/aws/101-AWS-S3-Commands.md)
 

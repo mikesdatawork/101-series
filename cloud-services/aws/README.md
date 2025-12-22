@@ -6,6 +6,7 @@ This directory contains cheat sheets for AWS services, focusing on CLI commands 
 
 - [101 AWS S3 Commands](101-AWS-S3-Commands.md) - Comprehensive guide to Amazon S3 object storage operations
 - [101 AWS Lambda Commands](101-AWS-Lambda-Commands.md) - Essential commands for serverless compute with AWS Lambda
+- [101 AWS DynamoDB Commands](101-AWS-DynamoDB-Commands.md) - NoSQL database operations with Amazon DynamoDB
 
 ## Purpose
 
