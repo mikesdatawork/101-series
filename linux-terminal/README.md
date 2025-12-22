@@ -7,8 +7,9 @@ This directory contains cheat sheets for various Linux terminal utilities and co
 - [101 Linux Tree Commands](101-Linux-Tree-Commands.md) - Comprehensive guide to the tree utility for directory visualization
 - [101 Linux Xclip Commands](101-Linux-Xclip-Commands.md) - Essential commands for clipboard operations in X11 environments
 - [101 Linux Xsel Commands](101-Linux-Xsel-Commands.md) - Alternative clipboard utility with advanced selection handling
-- [101 Linux Nano Commands](101-Linux-Terminal-Editor-Nano-Commands.md) - Essential commands for the simple terminal text editor nano
-- [101 Linux Vim-Neovim Commands](101-Linux-Terminal-Editor-Vim-Neovim-Commands.md) - Powerful modal text editor with extensive keyboard commands
+- [101 Linux Terminal Editor Nano Commands](101-Linux-Terminal-Editor-Nano-Commands.md) - Essential commands for the simple terminal text editor nano
+- [101 Linux Terminal Editor Vim-Neovim Commands](101-Linux-Terminal-Editor-Vim-Neovim-Commands.md) - Powerful modal text editor with extensive keyboard commands
+- [101 Linux Terminal Editor Emacs Commands](101-Linux-Terminal-Editor-Emacs-Commands.md) - Highly extensible text editor with Lisp-based configuration
 
 ## Purpose
 
