@@ -8,6 +8,7 @@ This directory contains cheat sheets for various Linux terminal utilities and co
 - [101 Linux Xclip Commands](101-Linux-Xclip-Commands.md) - Essential commands for clipboard operations in X11 environments
 - [101 Linux Xsel Commands](101-Linux-Xsel-Commands.md) - Alternative clipboard utility with advanced selection handling
 - [101 Linux Nano Commands](101-Linux-Nano-Commands.md) - Essential commands for the simple terminal text editor nano
+- [101 Linux Vim-Neovim Commands](101-Linux-Vim-Neovim-Commands.md) - Powerful modal text editor with extensive keyboard commands
 
 ## Purpose
 
@@ -20,3 +21,4 @@ These cheat sheets provide quick reference for powerful Linux terminal tools tha
 - DevOps engineers building pipelines
 - Power users mastering command-line tools
 - Anyone using Linux terminals daily
+
