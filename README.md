@@ -82,8 +82,8 @@ Perfect for:
 - [101-CSS-Commands](web-development/101-CSS-Commands.md)
 
 ### Linux Terminal
-- [Linux Vim-Neovim Commands](linux-terminal/101-Linux-Vim-Neovim-Commands.md)
-- [Linux Nano Commands](linux-terminal/101-Linux-Nano-Commands.md)
+- [Linux Vim-Neovim Commands](linux-terminal/101-Linux-Terminal-Editor-Vim-Neovim-Commands.md)
+- [Linux Nano Commands](linux-terminal/101-Linux-Terminal-Editor-Nano-Commands.md)
 - [Linux Xsel Commands](linux-terminal/101-Linux-Xsel-Commands.md)
 - [Linux Xclip Commands](linux-terminal/101-Linux-Xclip-Commands.md)
 - [Linux Tree Commands](linux-terminal/101-Linux-Tree-Commands.md)
