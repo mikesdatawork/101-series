@@ -113,3 +113,7 @@ See [CHEATSHEET-CREATION-GUIDE.md](CHEATSHEET-CREATION-GUIDE.md) for the exact t
 - Open an issue if your favorite tool is missing!
 
 **Your daily workflow just got faster.**
+
+### IDEs and Editors
+- [Linux Nano Commands](ides/101-Linux-Nano-Commands.md)
+
