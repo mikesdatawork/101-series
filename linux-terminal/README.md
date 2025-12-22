@@ -1,4 +1,4 @@
-# Operating Systems Command Cheat Sheets
+# Linux Terminal Command Cheat Sheets
 
 This directory contains cheat sheets for various operating system utilities and commands.
 
@@ -8,7 +8,7 @@ This directory contains cheat sheets for various operating system utilities and 
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands in operating systems, focusing on utilities that enhance productivity in terminal environments.
+These cheat sheets provide quick reference for the most commonly used and essential commands in Linux terminal, focusing on utilities that enhance productivity in terminal environments.
 
 ## Target Audience
 

@@ -81,11 +81,11 @@ Perfect for:
 - [101-HTML-Commands](web-development/101-HTML-Commands.md)
 - [101-CSS-Commands](web-development/101-CSS-Commands.md)
 
-### Operating Systems
-- [Linux Tree Commands](operating-systems/101-Linux-Tree-Commands.md)
-- [Linux Tree Commands](operating-systems/101-Linux-Tree-Commands.md)
-- [101-Bash-Commands](operating-systems/101-Bash-Commands.md)
-- [101-Linux-Commands](operating-systems/101-Linux-Commands.md)
+### Linux Terminal
+- [Linux Tree Commands](linux-terminal/101-Linux-Tree-Commands.md)
+- [Linux Tree Commands](linux-terminal/101-Linux-Tree-Commands.md)
+- [101-Bash-Commands](linux-terminal/101-Bash-Commands.md)
+- [101-Linux-Commands](linux-terminal/101-Linux-Commands.md)
 
 ## Most Popular Stacks at a Glance
 
