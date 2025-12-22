@@ -10,6 +10,7 @@ This directory contains cheat sheets for AWS services, focusing on CLI commands 
 - [101 AWS SageMaker Commands](101-AWS-SageMaker-Commands.md) - End-to-end ML platform with Amazon SageMaker
 - [101 AWS Glue Commands](101-AWS-Glue-Commands.md) - Serverless ETL and data cataloging with AWS Glue
 - [101 AWS EMR Commands](101-AWS-EMR-Commands.md) - Big data processing with Amazon EMR
+- [101 AWS Redshift Commands](101-AWS-Redshift-Commands.md) - Data warehouse operations with Amazon Redshift
 
 ## Purpose
 
