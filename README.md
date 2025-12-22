@@ -121,6 +121,7 @@ See [CHEATSHEET-CREATION-GUIDE.md](CHEATSHEET-CREATION-GUIDE.md) for the exact t
 
 
 ### AWS
+- [AWS Glue Commands](cloud-services/aws/101-AWS-Glue-Commands.md)
 - [AWS SageMaker Commands](cloud-services/aws/101-AWS-SageMaker-Commands.md)
 - [AWS DynamoDB Commands](cloud-services/aws/101-AWS-DynamoDB-Commands.md)
 - [AWS Lambda Commands](cloud-services/aws/101-AWS-Lambda-Commands.md)
