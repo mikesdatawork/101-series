@@ -12,6 +12,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 1. Installation and Setup (9)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | sudo apt install tree | Install on Debian-based systems | Setup on Ubuntu/Debian | sudo apt install tree |
 | sudo apt-get install tree | Alternative install on Debian | Older Debian versions | sudo apt-get install tree |
 | sudo yum install tree | Install on RPM-based systems | Setup on CentOS/RHEL | sudo yum install tree |
@@ -24,6 +25,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 2. Basic Directory Listing (8)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | tree | List current directory | Basic structure view | tree |
 | tree /path/to/dir | List specific directory | View absolute path | tree /etc |
 | tree . | List current explicitly | Same as tree | tree . |
@@ -35,6 +37,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 3. Recursion and Depth Control (5)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -L n | Limit recursion depth to n levels | Control depth | tree -L 3 |
 | -L 1 | Show only top-level items | Shallow view | tree -L 1 |
 | -L 0 | Invalid, defaults to unlimited | Edge case testing | tree -L 0 |
@@ -43,6 +46,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 4. File and Directory Inclusion (7)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -a | Include hidden files | Show all files | tree -a |
 | -d | Directories only | Folder structure | tree -d |
 | -f | Print full path prefix | Absolute paths | tree -f |
@@ -53,6 +57,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 5. Filtering and Ignoring (8)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -I pattern | Ignore files matching pattern | Exclude items | tree -I '*.git' |
 | -P pattern | Show only matching pattern | Include specific | tree -P '*.jpg' |
 | --prune | Remove empty directories from output | Clean display | tree --prune |
@@ -64,6 +69,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 6. Sorting Options (7)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -r | Reverse alphabetical sort | Descending order | tree -r |
 | -v | Version number sort | Numeric awareness | tree -v |
 | -t | Sort by modification time | Time-based | tree -t |
@@ -74,6 +80,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 7. Display Metadata (10)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -p | Print permissions | Security info | tree -p |
 | -u | Print owner username | User ownership | tree -u |
 | -g | Print group name | Group ownership | tree -g |
@@ -87,6 +94,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 8. Output Formatting (8)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -A | ANSI line graphics | Fancy lines | tree -A |
 | -S | CP437 line graphics | Alt charset | tree -S |
 | --charset charset | Specify character set | Custom output | tree --charset ascii |
@@ -98,6 +106,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 9. Color and Report Control (5)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -C | Force color output | Colored view | tree -C |
 | --noreport | Suppress file/dir count | No summary | tree --noreport |
 | tree -C --noreport | Colored without report | Clean colored | tree -C --noreport |
@@ -106,6 +115,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 10. Special Output Formats (6)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | --html | Output as HTML | Web view | tree --html |
 | --xml | Output as XML | Structured data | tree --xml |
 | --json | Output as JSON | API-friendly | tree --json |
@@ -115,6 +125,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 11. Symlink and File Type Handling (6)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | -l | Follow symlinks | Resolve links | tree -l |
 | -F | Append type indicators | /=*@| etc. | tree -F |
 | --nolinks | Don't follow symlinks | Avoid loops | tree --nolinks |
@@ -124,6 +135,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 12. Advanced Pattern Matching (7)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | --ignore-case | Case insensitive patterns | Flexible filter | tree --ignore-case -P 'doc*' |
 | tree -P '*.md\|*.txt' --matchdirs | Text files and dirs | Doc search | tree -P '*.md\|*.txt' --matchdirs |
 | tree -I 'temp?\|cache' | Wildcard ignore | Temp cleanup | tree -I 'temp?\|cache' |
@@ -134,6 +146,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 13. Integration with Other Tools (10)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | tree | less | Page large output | Scroll view | tree | less |
 | tree | grep pattern | Filter tree output | Search items | tree | grep .pdf |
 | tree > file.txt | Save to file | Export list | tree > structure.txt |
@@ -147,6 +160,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 14. Script and Automation Usage (8)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | tree -o backup.log | Log structure | Backup prep | tree -o backup.log |
 | tree --xml | xsltproc style.xsl - | Transform XML | Custom format | tree --xml | xsltproc style.xsl - |
 | if tree --filelimit 1000; then ... | Check large dirs | Script condition | In bash scripts |
@@ -158,6 +172,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 15. Common Use Cases (12)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | tree -d -L 2 | Project folder overview | Codebase scan | tree -d -L 2 |
 | tree -a -I '.git\|node_modules' | Clean web project view | Dev workflow | tree -a -I '.git\|node_modules' |
 | tree -h -s -D | Size and date audit | Storage check | tree -h -s -D |
@@ -173,6 +188,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 16. Troubleshooting and Errors (10)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | tree --help | Check for option support | Version issues | tree --help |
 | sudo tree /restricted | Access denied areas | Root required | sudo tree /proc |
 | tree --nolinks | Avoid symlink loops | Infinite recursion | tree --nolinks |
@@ -186,6 +202,7 @@ The tree command is a Linux utility that displays directory contents in a hierar
 
 ### 17. Advanced Combinations (15)
 | Command | Description | Common Usage | Examples |
+| --- | --- | --- | --- |
 | tree -a -I '.git*\|*.pyc\|__pycache__' -P '*.py' --prune | Python project clean view | Dev tools | tree -a -I '.git*\|*.pyc\|__pycache__' -P '*.py' --prune |
 | tree -d -L 3 -pugh --si --timefmt '%b %d %Y' | Detailed dir metadata | Admin tasks | tree -d -L 3 -pugh --si --timefmt '%b %d %Y' |
 | tree -f -s -h -D -t -r --du | Full sorted usage | Storage audit | tree -f -s -h -D -t -r --du |
