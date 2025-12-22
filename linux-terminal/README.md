@@ -1,20 +1,21 @@
 # Linux Terminal Command Cheat Sheets
 
-This directory contains cheat sheets for various operating system utilities and commands.
+This directory contains cheat sheets for various Linux terminal utilities and commands.
 
 ## Available Cheat Sheets
 
-- [101 Linux Tree Commands](101-Linux-Tree-Commands.md) - Comprehensive guide to the tree utility for directory structure visualization
+- [101 Linux Tree Commands](101-Linux-Tree-Commands.md) - Comprehensive guide to the tree utility for directory visualization
+- [101 Linux Xclip Commands](101-Linux-Xclip-Commands.md) - Essential commands for clipboard operations in X11 environments
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands in Linux terminal, focusing on utilities that enhance productivity in terminal environments.
+These cheat sheets provide quick reference for powerful Linux terminal tools that enhance productivity, automation, and workflow efficiency.
 
 ## Target Audience
 
-- System administrators managing file systems
-- Developers working with directory structures
-- DevOps engineers automating workflows
-- IT professionals troubleshooting issues
-- Anyone using command-line interfaces
+- System administrators automating tasks
+- Developers working in terminal environments
+- DevOps engineers building pipelines
+- Power users mastering command-line tools
+- Anyone using Linux terminals daily
 

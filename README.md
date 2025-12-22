@@ -82,6 +82,7 @@ Perfect for:
 - [101-CSS-Commands](web-development/101-CSS-Commands.md)
 
 ### Linux Terminal
+- [Linux Xclip Commands](linux-terminal/101-Linux-Xclip-Commands.md)
 - [Linux Tree Commands](linux-terminal/101-Linux-Tree-Commands.md)
 - [Linux Tree Commands](linux-terminal/101-Linux-Tree-Commands.md)
 - [101-Bash-Commands](linux-terminal/101-Bash-Commands.md)
