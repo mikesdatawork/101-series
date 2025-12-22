@@ -250,6 +250,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 1. Clipboard Basics
 | Term/Concept | Description |
+| --- | --- |
 | Clipboard | Storage for Ctrl+C/V data |
 | Primary Selection | Middle-click paste buffer |
 | Secondary Selection | Rarely used third buffer |
@@ -261,6 +262,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 2. Xclip Flags
 | Term/Concept | Description |
+| --- | --- |
 | -selection | Specify clipboard type |
 | -sel | Short for -selection |
 | -i | Input mode (copy) |
@@ -272,6 +274,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 3. Clipboard Operations
 | Term/Concept | Description |
+| --- | --- |
 | Copy | Send data to clipboard |
 | Paste | Retrieve data from clipboard |
 | Clear | Empty clipboard contents |
@@ -283,6 +286,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 4. Common Integrations
 | Term/Concept | Description |
+| --- | --- |
 | notify-send | Desktop notification |
 | jq | JSON processor |
 | grep | Pattern search |
@@ -294,6 +298,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 5. Error Types
 | Term/Concept | Description |
+| --- | --- |
 | No X server | DISPLAY unset |
 | Permission denied | Wrong display |
 | Empty clipboard | Nothing copied |
@@ -305,6 +310,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 6. Alternatives
 | Term/Concept | Description |
+| --- | --- |
 | xsel | Similar X11 tool |
 | wl-copy | Wayland copy |
 | wl-paste | Wayland paste |
@@ -316,6 +322,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 7. Best Practices
 | Term/Concept | Description |
+| --- | --- |
 | Clear sensitive | Remove passwords |
 | Use primary | Temporary copies |
 | Alias shortcuts | Faster workflow |
@@ -327,6 +334,7 @@ This mini-glossary defines key terms related to xclip and the Linux clipboard sy
 
 ### 8. X11 vs Wayland
 | Term/Concept | Description |
+| --- | --- |
 | X11 | Traditional clipboard |
 | Wayland | Modern, secure |
 | wl-clipboard | Wayland tools |

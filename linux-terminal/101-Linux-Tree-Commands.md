@@ -257,6 +257,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 1. File System Terms
 | Term/Concept | Description |
+| --- | --- |
 | Directory | Container holding files and subdirectories |
 | File | Basic unit of data storage |
 | Path | Location string for files/directories |
@@ -273,6 +274,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 2. Tree Command Flags
 | Term/Concept | Description |
+| --- | --- |
 | -a | All files including hidden |
 | -d | Directories only |
 | -f | Full path prefix |
@@ -291,6 +293,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 3. Output Symbols
 | Term/Concept | Description |
+| --- | --- |
 | ├── | Branch connector |
 | └── | Last branch connector |
 | │ | Vertical line |
@@ -308,6 +311,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 4. Sorting Types
 | Term/Concept | Description |
+| --- | --- |
 | Alphabetical | Default name sort |
 | Reverse | -r descending order |
 | Version | -v numeric-aware |
@@ -323,6 +327,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 5. Filtering Concepts
 | Term/Concept | Description |
+| --- | --- |
 | Pattern | String for matching |
 | Wildcard | * ? [ ] for globs |
 | Pipe Separator | \| for OR in patterns |
@@ -338,6 +343,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 6. Output Formats
 | Term/Concept | Description |
+| --- | --- |
 | Text | Default tree view |
 | ASCII | --charset ascii |
 | ANSI | -A graphics |
@@ -354,6 +360,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 7. Integration Tools
 | Term/Concept | Description |
+| --- | --- |
 | less | Pager for scrolling |
 | grep | Filter output lines |
 | sort | Resort the listing |
@@ -371,6 +378,7 @@ This mini-glossary defines key terms related to the Linux tree command and direc
 
 ### 8. Error Types
 | Term/Concept | Description |
+| --- | --- |
 | Permission Denied | Access restricted |
 | No Such File | Invalid path |
 | Infinite Loop | Symlink cycle |
