@@ -34,9 +34,7 @@ Perfect for:
 - [101-Terraform-GCP-Commands](cloud-services/101-Terraform-GCP-Commands.md)
 
 ### Data Science & ML
-### Data Visualization
-
-- [Tableau Commands](data-visualization/101-Tableau-Commands.md)
+- [R Commands](data-science/101-R-Commands.md)
 ### Databases
 
 ### Data Visualization
