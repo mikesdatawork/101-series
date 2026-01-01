@@ -859,20 +859,54 @@ Python is a versatile, high-level programming language prized for its readabilit
 | GUI | Graphical User Interface |
 
 ### 3. Key Concepts
-| Concept | Description |
-|---------|-------------|
-| Zen of Python | PEP 20 principles (import this) |
+
 | EAFP | Easier to Ask Forgiveness than Permission |
+| --- | --- |
+| Prefer try/except over explicit precondition checks for common operations.
+
 | LBYL | Look Before You Leap |
-| Idempotence | Operation repeatable without side effects |
-| Orthogonality | Features work independently |
-| DRY | Don't Repeat Yourself principle |
-| YAGNI | You Ain't Gonna Need It |
-| KISS | Keep It Simple, Stupid |
-| SOLID | OOP design principles |
-| MVC | Model-View-Controller architecture |
-| REST | Representational State Transfer |
-| SOAP | Simple Object Access Protocol |
+| --- | --- |
+| Check conditions explicitly before proceeding; contrasts with EAFP.
+
+| Pythonic | Code that follows Python idioms and style |
+| --- | --- |
+| Emphasizes readability, simplicity, and use of language features.
+
+| Truthiness | Boolean evaluation of non-boolean objects |
+| --- | --- |
+| Empty sequences/strings are False; non-empty/non-zero are True.
+
+| Everything is an Object | All entities have methods and attributes |
+| --- | --- |
+| Functions, classes, modules, and types are first-class objects.
+
+| Namespaces | Scoping mechanism for names |
+| --- | --- |
+| locals(), globals(), builtins() separate name resolution.
+
+| Dynamic Typing | Types resolved at runtime |
+| --- | --- |
+| No type declarations; variables can rebind to any type.
+
+| Strong Typing | Limited implicit type coercion |
+| --- | --- |
+| Operations require compatible types (no auto-conversion).
+
+| Introspection | Runtime examination of objects |
+| --- | --- |
+| Use dir(), type(), vars(), getattr() for metadata.
+
+| Reflection | Runtime modification of structure/behavior |
+| --- | --- |
+| setattr(), exec(), dynamic imports alter code.
+
+| Duck Typing | Interface over explicit type |
+| --- | --- |
+| Focus on behavior; no need for inheritance.
+
+| Batteries Included | Comprehensive standard library |
+| --- | --- |
+| Built-in modules handle many common tasks.
 
 ### 4. Data Model
 | Term | Description |
