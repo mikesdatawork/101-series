@@ -1382,40 +1382,66 @@ Python is a versatile, high-level programming language prized for its readabilit
 ## Mini-Glossary
 
 ### 1. Common Terms
-| Term | Description |
+#### Term | Description
+
 |------|-------------|
-| Bytecode | Compiled Python code executed by interpreter |
-| CPython | Reference Python implementation in C |
-| PyPy | Alternative implementation with JIT compiler |
-| Virtual Machine | Executes Python bytecode |
-| REPL | Read-Eval-Print Loop interactive shell |
-| PVM | Python Virtual Machine |
-| Interpreter | Executes Python code line by line |
-| GIL | Global Interpreter Lock limiting threads |
-| Module | Single Python file with definitions |
-| Package | Directory containing modules and __init__.py |
-| Script | Executable Python file |
-| Library | Collection of modules for reuse |
+#### Bytecode | Compiled Python code executed by interpreter
+
+#### CPython | Reference Python implementation in C
+
+#### PyPy | Alternative implementation with JIT compiler
+
+#### Virtual Machine | Executes Python bytecode
+
+#### REPL | Read-Eval-Print Loop interactive shell
+
+#### PVM | Python Virtual Machine
+
+#### Interpreter | Executes Python code line by line
+
+#### GIL | Global Interpreter Lock limiting threads
+
+#### Module | Single Python file with definitions
+
+#### Package | Directory containing modules and __init__.py
+
+#### Script | Executable Python file
+
+#### Library | Collection of modules for reuse
+
 
 ### 2. Acronyms
-| Acronym | Full Form |
+#### Acronym | Full Form
+
 |---------|-----------|
-| PEP | Python Enhancement Proposal |
-| OOP | Object-Oriented Programming |
-| FP | Functional Programming |
-| JIT | Just-In-Time compilation |
-| AST | Abstract Syntax Tree |
-| IDE | Integrated Development Environment |
-| TDD | Test-Driven Development |
-| BDD | Behavior-Driven Development |
-| API | Application Programming Interface |
-| ORM | Object-Relational Mapping |
-| CLI | Command-Line Interface |
-| GUI | Graphical User Interface |
+#### PEP | Python Enhancement Proposal
+
+#### OOP | Object-Oriented Programming
+
+#### FP | Functional Programming
+
+#### JIT | Just-In-Time compilation
+
+#### AST | Abstract Syntax Tree
+
+#### IDE | Integrated Development Environment
+
+#### TDD | Test-Driven Development
+
+#### BDD | Behavior-Driven Development
+
+#### API | Application Programming Interface
+
+#### ORM | Object-Relational Mapping
+
+#### CLI | Command-Line Interface
+
+#### GUI | Graphical User Interface
+
 
 ### 3. Key Concepts
 | Concept | Description |
-|---------|-------------|
+| --- | --- |
 | EAFP | Prefer try/except over explicit precondition checks for common operations. |
 | LBYL | Check conditions explicitly before proceeding; contrasts with EAFP. |
 | Pythonic | Code that follows Python idioms and style. Emphasizes readability, simplicity, and use of language features. |
@@ -1429,114 +1455,205 @@ Python is a versatile, high-level programming language prized for its readabilit
 | Duck Typing | Interface over explicit type. Focus on behavior; no need for inheritance. |
 | Batteries Included | Comprehensive standard library. Built-in modules handle many common tasks. |
 ### 4. Data Model
-| Term | Description |
+#### Term | Description
+
 |------|-------------|
-| Iterable | Object supporting __iter__ or __getitem__ |
-| Iterator | Object with __next__ for sequential access |
-| Sequence | Ordered collection supporting indexing |
-| Mapping | Key-value storage (dict-like) |
-| Callable | Object implementing __call__ |
-| Container | Supports membership testing with in |
-| Hashable | Can be used as dict key or set member |
-| Awaitable | Object that can be awaited |
-| Context Manager | Supports with statement |
-| Descriptor | Controls attribute access |
-| Generator | Returns iterator from yield |
-| Coroutine | Async def function |
+#### Iterable | Object supporting __iter__ or __getitem__
+
+#### Iterator | Object with __next__ for sequential access
+
+#### Sequence | Ordered collection supporting indexing
+
+#### Mapping | Key-value storage (dict-like)
+
+#### Callable | Object implementing __call__
+
+#### Container | Supports membership testing with in
+
+#### Hashable | Can be used as dict key or set member
+
+#### Awaitable | Object that can be awaited
+
+#### Context Manager | Supports with statement
+
+#### Descriptor | Controls attribute access
+
+#### Generator | Returns iterator from yield
+
+#### Coroutine | Async def function
+
 
 ### 5. Best Practices
-| Practice | Description |
+#### Practice | Description
+
 |----------|-------------|
-| Explicit over implicit | Clear code preferred |
-| Simple over complex | Choose straightforward solutions |
-| Flat over nested | Avoid deep nesting |
-| Sparse over dense | Readability counts |
-| Errors never pass silently | Handle or propagate |
-| Namespaces | Good idea to group related code |
-| Special cases aren't special | Follow rules consistently |
-| Practicality beats purity | Balance ideals with reality |
-| Now is better than never | But often never is better than right now |
-| If implementation is hard to explain | It's a bad idea |
-| If implementation is easy to explain | It may be a good idea |
-| One honking great idea | Do it |
+#### Explicit over implicit | Clear code preferred
+
+#### Simple over complex | Choose straightforward solutions
+
+#### Flat over nested | Avoid deep nesting
+
+#### Sparse over dense | Readability counts
+
+#### Errors never pass silently | Handle or propagate
+
+#### Namespaces | Good idea to group related code
+
+#### Special cases aren't special | Follow rules consistently
+
+#### Practicality beats purity | Balance ideals with reality
+
+#### Now is better than never | But often never is better than right now
+
+#### If implementation is hard to explain | It's a bad idea
+
+#### If implementation is easy to explain | It may be a good idea
+
+#### One honking great idea | Do it
+
 
 ### 6. Performance Patterns
-| Pattern | Description |
+#### Pattern | Description
+
 |---------|-------------|
-| Vectorization | Array operations over loops |
-| Memoization | Cache expensive function results |
-| Lazy loading | Defer object creation |
-| Pooling | Reuse expensive objects |
-| Batching | Process items in groups |
-| Indexing | Speed up data access |
-| Compression | Reduce storage/transfer size |
-| Asynchronous I/O | Non-blocking operations |
-| Parallel Processing | Utilize multiple cores |
-| Caching Layers | Multi-level caches |
-| Precomputation | Compute in advance |
-| Approximation | Trade accuracy for speed |
+#### Vectorization | Array operations over loops
+
+#### Memoization | Cache expensive function results
+
+#### Lazy loading | Defer object creation
+
+#### Pooling | Reuse expensive objects
+
+#### Batching | Process items in groups
+
+#### Indexing | Speed up data access
+
+#### Compression | Reduce storage/transfer size
+
+#### Asynchronous I/O | Non-blocking operations
+
+#### Parallel Processing | Utilize multiple cores
+
+#### Caching Layers | Multi-level caches
+
+#### Precomputation | Compute in advance
+
+#### Approximation | Trade accuracy for speed
+
 
 ### 7. Configuration Options
-| Option | Description |
+#### Option | Description
+
 |--------|-------------|
-| -O | Optimize bytecode, remove asserts |
-| -OO | More optimization, remove docstrings |
-| PYTHONPATH | Extend module search path |
-| PYTHONVERBOSE | Verbose import information |
-| PYTHONOPTIMIZE | Equivalent to -O flag |
-| PYTHONDEBUG | Debug mode |
-| PYTHONINSPECT | Interactive after script |
-| PYTHONDONTWRITEBYTECODE | No .pyc files |
-| PYTHONUNBUFFERED | Unbuffered output |
-| PYTHONHASHSEED | Reproducible hashing |
-| PYTHONMALLOC | Memory allocator control |
-| PYTHONPROFILEIMPORTTIME | Profile import times |
+#### -O | Optimize bytecode, remove asserts
+
+#### -OO | More optimization, remove docstrings
+
+#### PYTHONPATH | Extend module search path
+
+#### PYTHONVERBOSE | Verbose import information
+
+#### PYTHONOPTIMIZE | Equivalent to -O flag
+
+#### PYTHONDEBUG | Debug mode
+
+#### PYTHONINSPECT | Interactive after script
+
+#### PYTHONDONTWRITEBYTECODE | No .pyc files
+
+#### PYTHONUNBUFFERED | Unbuffered output
+
+#### PYTHONHASHSEED | Reproducible hashing
+
+#### PYTHONMALLOC | Memory allocator control
+
+#### PYTHONPROFILEIMPORTTIME | Profile import times
+
 
 ### 8. Tool Ecosystem
-| Tool | Purpose |
+#### Tool | Purpose
+
 |------|---------|
-| pip | Package installer |
-| venv | Virtual environment creator |
-| black | Code formatter |
-| ruff | Fast linter |
-| mypy | Static type checker |
-| pytest | Testing framework |
-| poetry | Dependency and packaging manager |
-| pre-commit | Git hook manager |
-| Sphinx | Documentation generator |
-| Jupyter | Interactive notebooks |
-| PyInstaller | Bundle to executable |
-| Cython | Compile to C |
+#### pip | Package installer
+
+#### venv | Virtual environment creator
+
+#### black | Code formatter
+
+#### ruff | Fast linter
+
+#### mypy | Static type checker
+
+#### pytest | Testing framework
+
+#### poetry | Dependency and packaging manager
+
+#### pre-commit | Git hook manager
+
+#### Sphinx | Documentation generator
+
+#### Jupyter | Interactive notebooks
+
+#### PyInstaller | Bundle to executable
+
+#### Cython | Compile to C
+
 
 ### 9. Common Patterns
-| Pattern | Description |
+#### Pattern | Description
+
 |---------|-------------|
-| Singleton | Ensure single instance |
-| Factory | Encapsulate object creation |
-| Observer | Notify dependents of changes |
-| Strategy | Interchangeable algorithms |
-| Decorator | Add responsibilities dynamically |
-| Adapter | Interface compatibility bridge |
-| Proxy | Control access to object |
-| Command | Encapsulate requests |
-| Chain of Responsibility | Pass requests along chain |
-| State | Alter behavior by state |
-| Template Method | Define algorithm skeleton |
-| Visitor | Separate algorithm from structure |
+#### Singleton | Ensure single instance
+
+#### Factory | Encapsulate object creation
+
+#### Observer | Notify dependents of changes
+
+#### Strategy | Interchangeable algorithms
+
+#### Decorator | Add responsibilities dynamically
+
+#### Adapter | Interface compatibility bridge
+
+#### Proxy | Control access to object
+
+#### Command | Encapsulate requests
+
+#### Chain of Responsibility | Pass requests along chain
+
+#### State | Alter behavior by state
+
+#### Template Method | Define algorithm skeleton
+
+#### Visitor | Separate algorithm from structure
+
 
 ### 10. Troubleshooting
-| Issue | Common Fix |
+#### Issue | Common Fix
+
 |-------|------------|
-| IndentationError | Consistent spaces/tabs |
-| NameError | Check variable spelling/scope |
-| TypeError | Verify object types/operations |
-| ImportError | Check module path/installation |
-| MemoryError | Use generators/chunking |
-| RecursionError | Increase limit or iterate |
-| UnicodeError | Proper encoding handling |
-| PermissionError | Check file/system permissions |
-| ConnectionError | Retry with backoff |
-| KeyError | Use .get() or default dict |
-| ValueError | Validate inputs |
-| AttributeError | Check object attributes |
+#### IndentationError | Consistent spaces/tabs
+
+#### NameError | Check variable spelling/scope
+
+#### TypeError | Verify object types/operations
+
+#### ImportError | Check module path/installation
+
+#### MemoryError | Use generators/chunking
+
+#### RecursionError | Increase limit or iterate
+
+#### UnicodeError | Proper encoding handling
+
+#### PermissionError | Check file/system permissions
+
+#### ConnectionError | Retry with backoff
+
+#### KeyError | Use .get() or default dict
+
+#### ValueError | Validate inputs
+
+#### AttributeError | Check object attributes
+
 
