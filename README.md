@@ -46,11 +46,7 @@ Perfect for:
 - [101-XLA-Commands](data-science/101-XLA-Commands.md)
 
 ### Databases
-- [101-MySQL-Commands](databases/101-MySQL-Commands.md)
-- [101-PostgreSQL-Commands](databases/101-PostgreSQL-Commands.md)
-- [101-Redis-Commands](databases/101-Redis-Commands.md)
-- [101-SQLite-Commands](databases/101-SQLite-Commands.md)
-
+- [SQL Commands](databases/101-SQL-Commands.md)
 ### DevOps & Infrastructure
 - [101-Ansible-Commands](devops/101-Ansible-Commands.md)
 - [101-Docker-Commands](devops/101-Docker-Commands.md)
