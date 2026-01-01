@@ -12,1243 +12,1243 @@ Python is a versatile, high-level programming language prized for its readabilit
 
 ### 1. Core Language Fundamentals (12)
 
-### Mutable vs Immutable Objects
+#### Mutable vs Immutable Objects
 
-### ---
+#### ---
 
-### Usage: Mutable objects change in place (list, dict, set); immutable cannot (int, str, tuple, frozenset). Use immutable for dictionary keys or function defaults.<br><br>Tips: Prefer immutable for thread safety, hashability, and predictability. Avoid mutable default arguments to prevent shared state bugs.
-
-
-### Duck Typing
-
-### ---
-
-### Usage: Focus on object interface rather than type; if it implements needed methods, treat it accordingly.<br><br>Tips: Enables flexible polymorphism. Use isinstance sparingly; check capabilities with hasattr when necessary.
+#### Usage: Mutable objects change in place (list, dict, set); immutable cannot (int, str, tuple, frozenset). Use immutable for dictionary keys or function defaults.<br><br>Tips: Prefer immutable for thread safety, hashability, and predictability. Avoid mutable default arguments to prevent shared state bugs.
 
 
-### First-Class Functions
+#### Duck Typing
 
-### ---
+#### ---
 
-### Usage: Functions are objects; assign to variables, pass as arguments, return from functions.<br><br>Tips: Supports callbacks and higher-order functions. Improves code reuse and modularity.
-
-
-### Closures
-
-### ---
-
-### Usage: Inner function captures and retains outer scope variables after outer function returns.<br><br>Tips: Use for factories or private state without globals. Inspect captured variables with func.__closure__.
+#### Usage: Focus on object interface rather than type; if it implements needed methods, treat it accordingly.<br><br>Tips: Enables flexible polymorphism. Use isinstance sparingly; check capabilities with hasattr when necessary.
 
 
-### Decorators
+#### First-Class Functions
 
-### ---
+#### ---
 
-### Usage: Modify or enhance functions/classes without changing source (@wrapper syntax).<br><br>Tips: Always use functools.wraps to preserve metadata. Apply for logging, caching, authorization.
-
-
-### Descriptors
-
-### ---
-
-### Usage: Objects defining __get__, __set__, __delete__ control attribute access.<br><br>Tips: Power properties, methods, and validation. Use for reusable attribute logic in frameworks.
+#### Usage: Functions are objects; assign to variables, pass as arguments, return from functions.<br><br>Tips: Supports callbacks and higher-order functions. Improves code reuse and modularity.
 
 
-### Metaclasses
+#### Closures
 
-### ---
+#### ---
 
-### Usage: Classes of classes; customize class creation (type is default metaclass).<br><br>Tips: Use sparingly for registration or validation. Prefer class decorators for simpler cases.
-
-
-### Context Managers
-
-### ---
-
-### Usage: Define __enter__/__exit__ for resource setup/teardown (with statement).<br><br>Tips: Ensure safe cleanup. Use contextlib.contextmanager for function-based managers.
+#### Usage: Inner function captures and retains outer scope variables after outer function returns.<br><br>Tips: Use for factories or private state without globals. Inspect captured variables with func.__closure__.
 
 
-### Generators
+#### Decorators
 
-### ---
+#### ---
 
-### Usage: Yield values lazily; pause and resume execution.<br><br>Tips: Memory-efficient for large or infinite sequences. Support send, throw, close protocols.
-
-
-### Coroutines (async def)
-
-### ---
-
-### Usage: Asynchronous functions with await for concurrent I/O operations.<br><br>Tips: Combine with asyncio event loop. Avoid blocking calls inside coroutines.
+#### Usage: Modify or enhance functions/classes without changing source (@wrapper syntax).<br><br>Tips: Always use functools.wraps to preserve metadata. Apply for logging, caching, authorization.
 
 
-### Type Hints
+#### Descriptors
 
-### ---
+#### ---
 
-### Usage: Annotations specifying expected types (PEP 484).<br><br>Tips: Enable static checking with mypy. Improves readability and IDE support without runtime cost.
+#### Usage: Objects defining __get__, __set__, __delete__ control attribute access.<br><br>Tips: Power properties, methods, and validation. Use for reusable attribute logic in frameworks.
 
 
-### Data Classes
+#### Metaclasses
 
-### ---
+#### ---
 
-### Usage: @dataclass generates __init__, __repr__, __eq__, etc automatically.<br><br>Tips: Use frozen=True for immutability. Add __post_init__ for custom validation.
+#### Usage: Classes of classes; customize class creation (type is default metaclass).<br><br>Tips: Use sparingly for registration or validation. Prefer class decorators for simpler cases.
+
+
+#### Context Managers
+
+#### ---
+
+#### Usage: Define __enter__/__exit__ for resource setup/teardown (with statement).<br><br>Tips: Ensure safe cleanup. Use contextlib.contextmanager for function-based managers.
+
+
+#### Generators
+
+#### ---
+
+#### Usage: Yield values lazily; pause and resume execution.<br><br>Tips: Memory-efficient for large or infinite sequences. Support send, throw, close protocols.
+
+
+#### Coroutines (async def)
+
+#### ---
+
+#### Usage: Asynchronous functions with await for concurrent I/O operations.<br><br>Tips: Combine with asyncio event loop. Avoid blocking calls inside coroutines.
+
+
+#### Type Hints
+
+#### ---
+
+#### Usage: Annotations specifying expected types (PEP 484).<br><br>Tips: Enable static checking with mypy. Improves readability and IDE support without runtime cost.
+
+
+#### Data Classes
+
+#### ---
+
+#### Usage: @dataclass generates __init__, __repr__, __eq__, etc automatically.<br><br>Tips: Use frozen=True for immutability. Add __post_init__ for custom validation.
 
 
 ### 2. Object-Oriented Design (12)
 
-### Composition over Inheritance
+#### Composition over Inheritance
 
-### ---
+#### ---
 
-### Usage: Build functionality by containing objects rather than subclassing.<br><br>Tips: Reduces coupling and fragile hierarchies. Follow "has-a" over "is-a" when possible.
-
-
-### SOLID Principles
-
-### ---
-
-### Usage: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.<br><br>Tips: Apply for long-term maintainability. Especially critical in large team projects.
+#### Usage: Build functionality by containing objects rather than subclassing.<br><br>Tips: Reduces coupling and fragile hierarchies. Follow "has-a" over "is-a" when possible.
 
 
-### Multiple Inheritance & MRO
+#### SOLID Principles
 
-### ---
+#### ---
 
-### Usage: Inherit from multiple bases; Method Resolution Order controls lookup.<br><br>Tips: Use cooperative super calls. Prefer composition or mixins to avoid diamond problems.
-
-
-### Abstract Base Classes
-
-### ---
-
-### Usage: Enforce interface contracts via abc module.<br><br>Tips: Better than duck typing for explicit requirements. Register virtual subclasses.
+#### Usage: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.<br><br>Tips: Apply for long-term maintainability. Especially critical in large team projects.
 
 
-### Magic Methods
+#### Multiple Inheritance & MRO
 
-### ---
+#### ---
 
-### Usage: Special __dunder__ methods customize object behavior.<br><br>Tips: Implement consistently (e.g., __eq__ and __hash__). Make objects feel native.
-
-
-### Properties
-
-### ---
-
-### Usage: @property decorator for managed attribute access.<br><br>Tips: Encapsulate logic or validation. Avoid heavy computation in getters.
+#### Usage: Inherit from multiple bases; Method Resolution Order controls lookup.<br><br>Tips: Use cooperative super calls. Prefer composition or mixins to avoid diamond problems.
 
 
-### __slots__
+#### Abstract Base Classes
 
-### ---
+#### ---
 
-### Usage: Restrict instance attributes to fixed set for memory savings.<br><br>Tips: Ideal for millions of instances. Incompatible with multiple inheritance.
-
-
-### Protocols (Structural Subtyping)
-
-### ---
-
-### Usage: typing.Protocol defines required methods for static duck typing.<br><br>Tips: Modern, explicit alternative to ABCs. Enables better type checker support.
+#### Usage: Enforce interface contracts via abc module.<br><br>Tips: Better than duck typing for explicit requirements. Register virtual subclasses.
 
 
-### Dependency Injection
+#### Magic Methods
 
-### ---
+#### ---
 
-### Usage: Pass dependencies explicitly rather than creating internally.<br><br>Tips: Enhances testability and flexibility. Manual or use lightweight injectors.
-
-
-### Factory Pattern
-
-### ---
-
-### Usage: Separate object creation logic from usage.<br><br>Tips: Hide complex initialization. Useful for configuration-based instantiation.
+#### Usage: Special __dunder__ methods customize object behavior.<br><br>Tips: Implement consistently (e.g., __eq__ and __hash__). Make objects feel native.
 
 
-### Singleton Pattern
+#### Properties
 
-### ---
+#### ---
 
-### Usage: Ensure a class has only one instance and provide global access point.<br><br>Tips: Use module-level variables or metaclasses. Avoid in multi-threaded environments without locks.
+#### Usage: @property decorator for managed attribute access.<br><br>Tips: Encapsulate logic or validation. Avoid heavy computation in getters.
 
 
-### Observer Pattern
+#### __slots__
 
-### ---
+#### ---
 
-### Usage: Define one-to-many dependency between objects for notifications.<br><br>Tips: Useful for event systems. Use weak references to avoid memory leaks.
+#### Usage: Restrict instance attributes to fixed set for memory savings.<br><br>Tips: Ideal for millions of instances. Incompatible with multiple inheritance.
+
+
+#### Protocols (Structural Subtyping)
+
+#### ---
+
+#### Usage: typing.Protocol defines required methods for static duck typing.<br><br>Tips: Modern, explicit alternative to ABCs. Enables better type checker support.
+
+
+#### Dependency Injection
+
+#### ---
+
+#### Usage: Pass dependencies explicitly rather than creating internally.<br><br>Tips: Enhances testability and flexibility. Manual or use lightweight injectors.
+
+
+#### Factory Pattern
+
+#### ---
+
+#### Usage: Separate object creation logic from usage.<br><br>Tips: Hide complex initialization. Useful for configuration-based instantiation.
+
+
+#### Singleton Pattern
+
+#### ---
+
+#### Usage: Ensure a class has only one instance and provide global access point.<br><br>Tips: Use module-level variables or metaclasses. Avoid in multi-threaded environments without locks.
+
+
+#### Observer Pattern
+
+#### ---
+
+#### Usage: Define one-to-many dependency between objects for notifications.<br><br>Tips: Useful for event systems. Use weak references to avoid memory leaks.
 
 
 ### 3. Functional Programming Techniques (12)
 
-### Immutability Patterns
+#### Immutability Patterns
 
-### ---
+#### ---
 
-### Usage: Treat data as immutable; create new objects for changes.<br><br>Tips: Use frozen dataclasses or copy. Safer for concurrency and reasoning.
-
-
-### Higher-Order Functions
-
-### ---
-
-### Usage: Functions accepting or returning other functions (map, filter, sorted key=).<br><br>Tips: Concise data transformation. Prefer comprehensions for simple cases.
+#### Usage: Treat data as immutable; create new objects for changes.<br><br>Tips: Use frozen dataclasses or copy. Safer for concurrency and reasoning.
 
 
-### Partial Application
+#### Higher-Order Functions
 
-### ---
+#### ---
 
-### Usage: functools.partial pre-fills arguments to create specialized function.<br><br>Tips: Simplify callbacks or configuration. Alternative to lambdas.
-
-
-### Lazy Evaluation
-
-### ---
-
-### Usage: Delay computation until needed (generators, itertools).<br><br>Tips: Efficient pipelines for large datasets. Avoid materializing full sequences.
+#### Usage: Functions accepting or returning other functions (map, filter, sorted key=).<br><br>Tips: Concise data transformation. Prefer comprehensions for simple cases.
 
 
-### Recursion
+#### Partial Application
 
-### ---
+#### ---
 
-### Usage: Function calls itself; elegant for tree structures.<br><br>Tips: Watch default limit (~1000). Prefer iteration or increase limit cautiously.
-
-
-### Memoization
-
-### ---
-
-### Usage: Cache results of expensive pure functions.<br><br>Tips: Use @functools.cache or lru_cache. Set maxsize=None for unlimited.
+#### Usage: functools.partial pre-fills arguments to create specialized function.<br><br>Tips: Simplify callbacks or configuration. Alternative to lambdas.
 
 
-### Operator Module
+#### Lazy Evaluation
 
-### ---
+#### ---
 
-### Usage: Functional versions of operators (add, itemgetter, attrgetter).<br><br>Tips: Clean with sorted, map, reduce. Avoid lambdas for simple operations.
-
-
-### Itertools Library
-
-### ---
-
-### Usage: Efficient iterators for combinations, permutations, chaining.<br><br>Tips: Building blocks for complex loops. Often faster than pure Python.
+#### Usage: Delay computation until needed (generators, itertools).<br><br>Tips: Efficient pipelines for large datasets. Avoid materializing full sequences.
 
 
-### Lambda Expressions
+#### Recursion
 
-### ---
+#### ---
 
-### Usage: Anonymous single-expression functions.<br><br>Tips: Keep simple and readable. Use def for anything complex.
-
-
-### Pure Functions
-
-### ---
-
-### Usage: Same input always produces same output; no side effects.<br><br>Tips: Easier to test, debug, cache, and parallelize.
+#### Usage: Function calls itself; elegant for tree structures.<br><br>Tips: Watch default limit (~1000). Prefer iteration or increase limit cautiously.
 
 
-### Currying
+#### Memoization
 
-### ---
+#### ---
 
-### Usage: Transform function of multiple arguments into sequence of single-argument functions.<br><br>Tips: Use functools.partial for simple currying. Enhances functional composition.
+#### Usage: Cache results of expensive pure functions.<br><br>Tips: Use @functools.cache or lru_cache. Set maxsize=None for unlimited.
 
 
-### Monads
+#### Operator Module
 
-### ---
+#### ---
 
-### Usage: Structure for sequencing computations with context (e.g., Maybe, IO).<br><br>Tips: Use libraries like pymonad. Handles errors or state in functional style.
+#### Usage: Functional versions of operators (add, itemgetter, attrgetter).<br><br>Tips: Clean with sorted, map, reduce. Avoid lambdas for simple operations.
+
+
+#### Itertools Library
+
+#### ---
+
+#### Usage: Efficient iterators for combinations, permutations, chaining.<br><br>Tips: Building blocks for complex loops. Often faster than pure Python.
+
+
+#### Lambda Expressions
+
+#### ---
+
+#### Usage: Anonymous single-expression functions.<br><br>Tips: Keep simple and readable. Use def for anything complex.
+
+
+#### Pure Functions
+
+#### ---
+
+#### Usage: Same input always produces same output; no side effects.<br><br>Tips: Easier to test, debug, cache, and parallelize.
+
+
+#### Currying
+
+#### ---
+
+#### Usage: Transform function of multiple arguments into sequence of single-argument functions.<br><br>Tips: Use functools.partial for simple currying. Enhances functional composition.
+
+
+#### Monads
+
+#### ---
+
+#### Usage: Structure for sequencing computations with context (e.g., Maybe, IO).<br><br>Tips: Use libraries like pymonad. Handles errors or state in functional style.
 
 
 ### 4. Memory & Performance Concepts (12)
 
-### Reference Counting & GC
+#### Reference Counting & GC
 
-### ---
+#### ---
 
-### Usage: Primary deallocation via refcount; gc handles cycles.<br><br>Tips: Avoid circular references. Use weakref for caches or observers.
-
-
-### String Interning
-
-### ---
-
-### Usage: Reuse identical immutable strings to save memory.<br><br>Tips: Automatic for small strings; use sys.intern() for manual control.
+#### Usage: Primary deallocation via refcount; gc handles cycles.<br><br>Tips: Avoid circular references. Use weakref for caches or observers.
 
 
-### Buffer Protocol
+#### String Interning
 
-### ---
+#### ---
 
-### Usage: Access object memory directly without copying.<br><br>Tips: Used by bytes, bytearray, numpy. Improves zero-copy performance.
-
-
-### GIL (Global Interpreter Lock)
-
-### ---
-
-### Usage: Allows only one thread to execute Python bytecode at once.<br><br>Tips: Use multiprocessing for CPU-bound tasks. Threading fine for I/O.
+#### Usage: Reuse identical immutable strings to save memory.<br><br>Tips: Automatic for small strings; use sys.intern() for manual control.
 
 
-### Profiling Tools
+#### Buffer Protocol
 
-### ---
+#### ---
 
-### Usage: cProfile, profile, line_profiler identify bottlenecks.<br><br>Tips: Profile before optimizing. Focus on hot paths.
-
-
-### Big-O Complexity
-
-### ---
-
-### Usage: Analyze algorithm time/space growth.<br><br>Tips: Choose appropriate data structures (dict O(1) lookup vs list O(n)).
+#### Usage: Access object memory directly without copying.<br><br>Tips: Used by bytes, bytearray, numpy. Improves zero-copy performance.
 
 
-### List vs Generator
+#### GIL (Global Interpreter Lock)
 
-### ---
+#### ---
 
-### Usage: Lists materialize all values; generators yield lazily.<br><br>Tips: Use generators for large sequences to reduce memory footprint.
-
-
-### Copy Shallow vs Deep
-
-### ---
-
-### Usage: copy.copy creates shallow; copy.deepcopy recurses.<br><br>Tips: Shallow sufficient for simple containers; deep for nested mutables.
+#### Usage: Allows only one thread to execute Python bytecode at once.<br><br>Tips: Use multiprocessing for CPU-bound tasks. Threading fine for I/O.
 
 
-### C Extensions & Cython
+#### Profiling Tools
 
-### ---
+#### ---
 
-### Usage: Write performance-critical code in C-compatible Python.<br><br>Tips: Speed up numerical or loop-heavy sections.
-
-
-### Numba JIT
-
-### ---
-
-### Usage: Just-in-time compilation for numerical functions.<br><br>Tips: Decorate with @njit for massive speedups on arrays/loops.
+#### Usage: cProfile, profile, line_profiler identify bottlenecks.<br><br>Tips: Profile before optimizing. Focus on hot paths.
 
 
-### Vectorization
+#### Big-O Complexity
 
-### ---
+#### ---
 
-### Usage: Apply operations to entire arrays instead of loops.<br><br>Tips: Use NumPy broadcasting. Often 10-100x faster than Python loops.
+#### Usage: Analyze algorithm time/space growth.<br><br>Tips: Choose appropriate data structures (dict O(1) lookup vs list O(n)).
 
 
-### Memory Views
+#### List vs Generator
 
-### ---
+#### ---
 
-### Usage: Efficiently access array data without copying.<br><br>Tips: Use memoryview for slicing large buffers. Compatible with C code.
+#### Usage: Lists materialize all values; generators yield lazily.<br><br>Tips: Use generators for large sequences to reduce memory footprint.
+
+
+#### Copy Shallow vs Deep
+
+#### ---
+
+#### Usage: copy.copy creates shallow; copy.deepcopy recurses.<br><br>Tips: Shallow sufficient for simple containers; deep for nested mutables.
+
+
+#### C Extensions & Cython
+
+#### ---
+
+#### Usage: Write performance-critical code in C-compatible Python.<br><br>Tips: Speed up numerical or loop-heavy sections.
+
+
+#### Numba JIT
+
+#### ---
+
+#### Usage: Just-in-time compilation for numerical functions.<br><br>Tips: Decorate with @njit for massive speedups on arrays/loops.
+
+
+#### Vectorization
+
+#### ---
+
+#### Usage: Apply operations to entire arrays instead of loops.<br><br>Tips: Use NumPy broadcasting. Often 10-100x faster than Python loops.
+
+
+#### Memory Views
+
+#### ---
+
+#### Usage: Efficiently access array data without copying.<br><br>Tips: Use memoryview for slicing large buffers. Compatible with C code.
 
 
 ### 5. Error Handling & Robustness (12)
 
-### Exception Hierarchy
+#### Exception Hierarchy
 
-### ---
+#### ---
 
-### Usage: BaseException → Exception → specific errors.<br><br>Tips: Catch specific exceptions first. Never bare except.
-
-
-### Custom Exceptions
-
-### ---
-
-### Usage: Define subclasses of Exception for domain errors.<br><br>Tips: Add context attributes. Raise with meaningful messages.
+#### Usage: BaseException → Exception → specific errors.<br><br>Tips: Catch specific exceptions first. Never bare except.
 
 
-### Finally & Else Clauses
+#### Custom Exceptions
 
-### ---
+#### ---
 
-### Usage: finally always runs; else runs if no exception.<br><br>Tips: Use finally for cleanup. Else avoids unnecessary try nesting.
-
-
-### Context Manager for Errors
-
-### ---
-
-### Usage: Suppress or convert exceptions with contextlib.suppress.<br><br>Tips: Clean resource handling even on failure.
+#### Usage: Define subclasses of Exception for domain errors.<br><br>Tips: Add context attributes. Raise with meaningful messages.
 
 
-### Logging vs Print
+#### Finally & Else Clauses
 
-### ---
+#### ---
 
-### Usage: logging module for configurable output.<br><br>Tips: Use levels (DEBUG, INFO, WARNING, ERROR). Never print in production.
-
-
-### Assertions
-
-### ---
-
-### Usage: assert for debugging assumptions (disabled with -O).<br><br>Tips: Include messages. Not for data validation.
+#### Usage: finally always runs; else runs if no exception.<br><br>Tips: Use finally for cleanup. Else avoids unnecessary try nesting.
 
 
-### Defensive Programming
+#### Context Manager for Errors
 
-### ---
+#### ---
 
-### Usage: Validate inputs early; fail fast.<br><br>Tips: Use type hints + runtime checks when critical.
-
-
-### Retry Patterns
-
-### ---
-
-### Usage: Retry transient failures (network, API).<br><br>Tips: Exponential backoff. Libraries like tenacity simplify.
+#### Usage: Suppress or convert exceptions with contextlib.suppress.<br><br>Tips: Clean resource handling even on failure.
 
 
-### Circuit Breaker
+#### Logging vs Print
 
-### ---
+#### ---
 
-### Usage: Prevent repeated failures by opening circuit after threshold.<br><br>Tips: Use pybreaker library. Essential for resilient services.
-
-
-### Graceful Degradation
-
-### ---
-
-### Usage: Provide fallback functionality on partial failure.<br><br>Tips: Cache results or use defaults. Maintain user experience.
+#### Usage: logging module for configurable output.<br><br>Tips: Use levels (DEBUG, INFO, WARNING, ERROR). Never print in production.
 
 
-### Post-Mortem Debugging
+#### Assertions
 
-### ---
+#### ---
 
-### Usage: Inspect stack after uncaught exception (pdb.pm()).<br><br>Tips: Use in interactive mode. Integrate with IPython for better UX.
+#### Usage: assert for debugging assumptions (disabled with -O).<br><br>Tips: Include messages. Not for data validation.
 
 
-### Sanitizing Inputs
+#### Defensive Programming
 
-### ---
+#### ---
 
-### Usage: Clean user data to prevent injection attacks.<br><br>Tips: Use libraries like bleach for HTML. Always escape outputs.
+#### Usage: Validate inputs early; fail fast.<br><br>Tips: Use type hints + runtime checks when critical.
+
+
+#### Retry Patterns
+
+#### ---
+
+#### Usage: Retry transient failures (network, API).<br><br>Tips: Exponential backoff. Libraries like tenacity simplify.
+
+
+#### Circuit Breaker
+
+#### ---
+
+#### Usage: Prevent repeated failures by opening circuit after threshold.<br><br>Tips: Use pybreaker library. Essential for resilient services.
+
+
+#### Graceful Degradation
+
+#### ---
+
+#### Usage: Provide fallback functionality on partial failure.<br><br>Tips: Cache results or use defaults. Maintain user experience.
+
+
+#### Post-Mortem Debugging
+
+#### ---
+
+#### Usage: Inspect stack after uncaught exception (pdb.pm()).<br><br>Tips: Use in interactive mode. Integrate with IPython for better UX.
+
+
+#### Sanitizing Inputs
+
+#### ---
+
+#### Usage: Clean user data to prevent injection attacks.<br><br>Tips: Use libraries like bleach for HTML. Always escape outputs.
 
 
 ### 6. Code Organization & Maintainability (12)
 
-### Modules & Packages
+#### Modules & Packages
 
-### ---
+#### ---
 
-### Usage: Organize code into .py files and __init__.py directories.<br><br>Tips: Keep modules focused. Use relative imports carefully.
-
-
-### __name__ == "__main__" Guard
-
-### ---
-
-### Usage: Separate script execution from import behavior.<br><br>Tips: Enables reusable modules and testing entry points.
+#### Usage: Organize code into .py files and __init__.py directories.<br><br>Tips: Keep modules focused. Use relative imports carefully.
 
 
-### Docstrings (PEP 257)
+#### __name__ == "__main__" Guard
 
-### ---
+#### ---
 
-### Usage: Triple-quoted strings documenting modules, classes, functions.<br><br>Tips: Use Google or NumPy style consistently. Generate docs with Sphinx.
-
-
-### Virtual Environments
-
-### ---
-
-### Usage: Isolate project dependencies (venv, pipenv, poetry).<br><br>Tips: Always use one per project. Include requirements.txt or pyproject.toml.
+#### Usage: Separate script execution from import behavior.<br><br>Tips: Enables reusable modules and testing entry points.
 
 
-### Packaging (setup.py / pyproject.toml)
+#### Docstrings (PEP 257)
 
-### ---
+#### ---
 
-### Usage: Define distributable packages.<br><br>Tips: Use poetry or hatch for modern workflows.
-
-
-### Linting & Formatting
-
-### ---
-
-### Usage: Tools like black, isort, flake8, ruff enforce style.<br><br>Tips: Automate in pre-commit hooks. Consistent style > personal preference.
+#### Usage: Triple-quoted strings documenting modules, classes, functions.<br><br>Tips: Use Google or NumPy style consistently. Generate docs with Sphinx.
 
 
-### Static Type Checking
+#### Virtual Environments
 
-### ---
+#### ---
 
-### Usage: mypy, pyright analyze type hints.<br><br>Tips: Gradual typing; start with --strict for new code.
-
-
-### Refactoring Principles
-
-### ---
-
-### Usage: Improve code without changing behavior.<br><br>Tips: Small steps, run tests frequently. Extract functions/classes.
+#### Usage: Isolate project dependencies (venv, pipenv, poetry).<br><br>Tips: Always use one per project. Include requirements.txt or pyproject.toml.
 
 
-### Design Patterns
+#### Packaging (setup.py / pyproject.toml)
 
-### ---
+#### ---
 
-### Usage: Reusable solutions like Singleton, Observer, Strategy.<br><br>Tips: Apply when problem matches; avoid over-engineering.
-
-
-### Version Control Best Practices
-
-### ---
-
-### Usage: Commit atomic changes, meaningful messages.<br><br>Tips: Branch per feature. Use .gitignore properly.
+#### Usage: Define distributable packages.<br><br>Tips: Use poetry or hatch for modern workflows.
 
 
-### Modular Design
+#### Linting & Formatting
 
-### ---
+#### ---
 
-### Usage: Break system into independent, interchangeable modules.<br><br>Tips: Loose coupling, high cohesion. Facilitates testing and reuse.
+#### Usage: Tools like black, isort, flake8, ruff enforce style.<br><br>Tips: Automate in pre-commit hooks. Consistent style > personal preference.
 
 
-### Code Reviews
+#### Static Type Checking
 
-### ---
+#### ---
 
-### Usage: Peer examination of code changes.<br><br>Tips: Focus on logic, style, security. Use tools like GitHub PRs.
+#### Usage: mypy, pyright analyze type hints.<br><br>Tips: Gradual typing; start with --strict for new code.
+
+
+#### Refactoring Principles
+
+#### ---
+
+#### Usage: Improve code without changing behavior.<br><br>Tips: Small steps, run tests frequently. Extract functions/classes.
+
+
+#### Design Patterns
+
+#### ---
+
+#### Usage: Reusable solutions like Singleton, Observer, Strategy.<br><br>Tips: Apply when problem matches; avoid over-engineering.
+
+
+#### Version Control Best Practices
+
+#### ---
+
+#### Usage: Commit atomic changes, meaningful messages.<br><br>Tips: Branch per feature. Use .gitignore properly.
+
+
+#### Modular Design
+
+#### ---
+
+#### Usage: Break system into independent, interchangeable modules.<br><br>Tips: Loose coupling, high cohesion. Facilitates testing and reuse.
+
+
+#### Code Reviews
+
+#### ---
+
+#### Usage: Peer examination of code changes.<br><br>Tips: Focus on logic, style, security. Use tools like GitHub PRs.
 
 
 ### 7. Testing Concepts (12)
 
-### Unit vs Integration vs End-to-End
+#### Unit vs Integration vs End-to-End
 
-### ---
+#### ---
 
-### Usage: Unit isolates functions; integration components; E2E full flow.<br><br>Tips: Pyramid: many unit, fewer integration, few E2E.
-
-
-### Test Frameworks
-
-### ---
-
-### Usage: pytest preferred; unittest built-in.<br><br>Tips: pytest fixtures for setup. Use parametrization for data-driven tests.
+#### Usage: Unit isolates functions; integration components; E2E full flow.<br><br>Tips: Pyramid: many unit, fewer integration, few E2E.
 
 
-### Mocking
+#### Test Frameworks
 
-### ---
+#### ---
 
-### Usage: unittest.mock replaces dependencies.<br><br>Tips: Patch where used, not imported. Verify interactions when needed.
-
-
-### Coverage
-
-### ---
-
-### Usage: Measure executed code percentage.<br><br>Tips: Aim 80-90%; 100% not always valuable.
+#### Usage: pytest preferred; unittest built-in.<br><br>Tips: pytest fixtures for setup. Use parametrization for data-driven tests.
 
 
-### Property-Based Testing
+#### Mocking
 
-### ---
+#### ---
 
-### Usage: hypothesis generates inputs to falsify assumptions.<br><br>Tips: Catch edge cases manual tests miss.
-
-
-### Test-Driven Development (TDD)
-
-### ---
-
-### Usage: Write failing tests first, then code.<br><br>Tips: Red-Green-Refactor cycle. Leads to better design.
+#### Usage: unittest.mock replaces dependencies.<br><br>Tips: Patch where used, not imported. Verify interactions when needed.
 
 
-### Fixtures & Setup
+#### Coverage
 
-### ---
+#### ---
 
-### Usage: Prepare test state (tmp_path, databases).<br><br>Tips: Scope appropriately (function, module, session).
-
-
-### BDD (Behavior-Driven Development)
-
-### ---
-
-### Usage: Describe features in natural language (behave, pytest-bdd).<br><br>Tips: Bridge developers and stakeholders.
+#### Usage: Measure executed code percentage.<br><br>Tips: Aim 80-90%; 100% not always valuable.
 
 
-### Mutation Testing
+#### Property-Based Testing
 
-### ---
+#### ---
 
-### Usage: Modify code to check if tests detect changes (mutmut).<br><br>Tips: Ensures strong test suite. Resource-intensive.
-
-
-### Snapshot Testing
-
-### ---
-
-### Usage: Compare outputs against stored snapshots.<br><br>Tips: Use pytest-snapshot. Great for UI or complex data.
+#### Usage: hypothesis generates inputs to falsify assumptions.<br><br>Tips: Catch edge cases manual tests miss.
 
 
-### Continuous Integration Testing
+#### Test-Driven Development (TDD)
 
-### ---
+#### ---
 
-### Usage: Run tests automatically on code changes (GitHub Actions).<br><br>Tips: Fast feedback loop. Include linting and coverage.
+#### Usage: Write failing tests first, then code.<br><br>Tips: Red-Green-Refactor cycle. Leads to better design.
 
 
-### Load Testing
+#### Fixtures & Setup
 
-### ---
+#### ---
 
-### Usage: Simulate high usage to find performance issues (locust).<br><br>Tips: Identify bottlenecks early. Set realistic scenarios.
+#### Usage: Prepare test state (tmp_path, databases).<br><br>Tips: Scope appropriately (function, module, session).
+
+
+#### BDD (Behavior-Driven Development)
+
+#### ---
+
+#### Usage: Describe features in natural language (behave, pytest-bdd).<br><br>Tips: Bridge developers and stakeholders.
+
+
+#### Mutation Testing
+
+#### ---
+
+#### Usage: Modify code to check if tests detect changes (mutmut).<br><br>Tips: Ensures strong test suite. Resource-intensive.
+
+
+#### Snapshot Testing
+
+#### ---
+
+#### Usage: Compare outputs against stored snapshots.<br><br>Tips: Use pytest-snapshot. Great for UI or complex data.
+
+
+#### Continuous Integration Testing
+
+#### ---
+
+#### Usage: Run tests automatically on code changes (GitHub Actions).<br><br>Tips: Fast feedback loop. Include linting and coverage.
+
+
+#### Load Testing
+
+#### ---
+
+#### Usage: Simulate high usage to find performance issues (locust).<br><br>Tips: Identify bottlenecks early. Set realistic scenarios.
 
 
 ### 8. Security Concepts (10)
 
-### Input Sanitization
+#### Input Sanitization
 
-### ---
+#### ---
 
-### Usage: Clean user input to prevent attacks like XSS or SQL injection.<br><br>Tips: Use libraries like bleach or cgi.escape. Never trust external data.
-
-
-### Cryptographic Hashing
-
-### ---
-
-### Usage: Securely hash passwords or data (hashlib).<br><br>Tips: Use bcrypt or argon2 for passwords. Add salt and pepper.
+#### Usage: Clean user input to prevent attacks like XSS or SQL injection.<br><br>Tips: Use libraries like bleach or cgi.escape. Never trust external data.
 
 
-### Secure Randomness
+#### Cryptographic Hashing
 
-### ---
+#### ---
 
-### Usage: Generate cryptographically secure random numbers (secrets module).<br><br>Tips: Avoid random module for security. Use for tokens, nonces.
-
-
-### Environment Variables for Secrets
-
-### ---
-
-### Usage: Store sensitive data like API keys in os.environ.<br><br>Tips: Use dotenv for development. Never commit secrets to git.
+#### Usage: Securely hash passwords or data (hashlib).<br><br>Tips: Use bcrypt or argon2 for passwords. Add salt and pepper.
 
 
-### Principle of Least Privilege
+#### Secure Randomness
 
-### ---
+#### ---
 
-### Usage: Grant minimal permissions needed.<br><br>Tips: Apply to users, processes, modules. Reduces attack surface.
-
-
-### OWASP Top 10 Awareness
-
-### ---
-
-### Usage: Address common web vulnerabilities.<br><br>Tips: Regular audits. Use tools like bandit for static analysis.
+#### Usage: Generate cryptographically secure random numbers (secrets module).<br><br>Tips: Avoid random module for security. Use for tokens, nonces.
 
 
-### HTTPS Enforcement
+#### Environment Variables for Secrets
 
-### ---
+#### ---
 
-### Usage: Use ssl module or frameworks for secure connections.<br><br>Tips: Redirect HTTP to HTTPS. Use HSTS headers.
-
-
-### Dependency Scanning
-
-### ---
-
-### Usage: Check libraries for vulnerabilities (safety, pip-audit).<br><br>Tips: Integrate into CI/CD. Update regularly.
+#### Usage: Store sensitive data like API keys in os.environ.<br><br>Tips: Use dotenv for development. Never commit secrets to git.
 
 
-### Rate Limiting
+#### Principle of Least Privilege
 
-### ---
+#### ---
 
-### Usage: Prevent abuse with limits on requests.<br><br>Tips: Use redis for storage. Exponential backoff for clients.
+#### Usage: Grant minimal permissions needed.<br><br>Tips: Apply to users, processes, modules. Reduces attack surface.
 
 
-### Secure Coding Guidelines
+#### OWASP Top 10 Awareness
 
-### ---
+#### ---
 
-### Usage: Follow CERT or Python-specific secure coding practices.<br><br>Tips: Avoid eval/exec. Use safe deserialization.
+#### Usage: Address common web vulnerabilities.<br><br>Tips: Regular audits. Use tools like bandit for static analysis.
+
+
+#### HTTPS Enforcement
+
+#### ---
+
+#### Usage: Use ssl module or frameworks for secure connections.<br><br>Tips: Redirect HTTP to HTTPS. Use HSTS headers.
+
+
+#### Dependency Scanning
+
+#### ---
+
+#### Usage: Check libraries for vulnerabilities (safety, pip-audit).<br><br>Tips: Integrate into CI/CD. Update regularly.
+
+
+#### Rate Limiting
+
+#### ---
+
+#### Usage: Prevent abuse with limits on requests.<br><br>Tips: Use redis for storage. Exponential backoff for clients.
+
+
+#### Secure Coding Guidelines
+
+#### ---
+
+#### Usage: Follow CERT or Python-specific secure coding practices.<br><br>Tips: Avoid eval/exec. Use safe deserialization.
 
 
 ### 9. Web Development Concepts (10)
 
-### Request-Response Cycle
+#### Request-Response Cycle
 
-### ---
+#### ---
 
-### Usage: Handle incoming requests and send responses (Flask, Django).<br><br>Tips: Keep stateless where possible. Use middleware for common logic.
-
-
-### RESTful APIs
-
-### ---
-
-### Usage: Design endpoints with HTTP methods (GET, POST, etc.).<br><br>Tips: Use status codes properly. Version APIs.
+#### Usage: Handle incoming requests and send responses (Flask, Django).<br><br>Tips: Keep stateless where possible. Use middleware for common logic.
 
 
-### Authentication Methods
+#### RESTful APIs
 
-### ---
+#### ---
 
-### Usage: Basic, JWT, OAuth for user verification.<br><br>Tips: Store tokens securely. Refresh mechanisms for long sessions.
-
-
-### Session Management
-
-### ---
-
-### Usage: Maintain state across requests (cookies, sessions).<br><br>Tips: Use secure, http-only cookies. Invalidate on logout.
+#### Usage: Design endpoints with HTTP methods (GET, POST, etc.).<br><br>Tips: Use status codes properly. Version APIs.
 
 
-### CORS (Cross-Origin Resource Sharing)
+#### Authentication Methods
 
-### ---
+#### ---
 
-### Usage: Control resource sharing between domains.<br><br>Tips: Set headers carefully. Avoid * wildcard in production.
-
-
-### WebSockets
-
-### ---
-
-### Usage: Bidirectional communication (websockets library).<br><br>Tips: For real-time apps. Handle disconnects gracefully.
+#### Usage: Basic, JWT, OAuth for user verification.<br><br>Tips: Store tokens securely. Refresh mechanisms for long sessions.
 
 
-### Template Engines
+#### Session Management
 
-### ---
+#### ---
 
-### Usage: Render dynamic HTML (Jinja2).<br><br>Tips: Escape outputs to prevent XSS. Reuse templates.
-
-
-### Asynchronous Web
-
-### ---
-
-### Usage: Handle concurrent requests (aiohttp, FastAPI).<br><br>Tips: Use for I/O heavy apps. Avoid blocking operations.
+#### Usage: Maintain state across requests (cookies, sessions).<br><br>Tips: Use secure, http-only cookies. Invalidate on logout.
 
 
-### Error Pages
+#### CORS (Cross-Origin Resource Sharing)
 
-### ---
+#### ---
 
-### Usage: Custom handlers for 404, 500, etc.<br><br>Tips: User-friendly messages. Log details internally.
+#### Usage: Control resource sharing between domains.<br><br>Tips: Set headers carefully. Avoid * wildcard in production.
 
 
-### Caching Strategies
+#### WebSockets
 
-### ---
+#### ---
 
-### Usage: Store responses or data (redis, memcached).<br><br>Tips: Set TTL. Invalidate on updates.
+#### Usage: Bidirectional communication (websockets library).<br><br>Tips: For real-time apps. Handle disconnects gracefully.
+
+
+#### Template Engines
+
+#### ---
+
+#### Usage: Render dynamic HTML (Jinja2).<br><br>Tips: Escape outputs to prevent XSS. Reuse templates.
+
+
+#### Asynchronous Web
+
+#### ---
+
+#### Usage: Handle concurrent requests (aiohttp, FastAPI).<br><br>Tips: Use for I/O heavy apps. Avoid blocking operations.
+
+
+#### Error Pages
+
+#### ---
+
+#### Usage: Custom handlers for 404, 500, etc.<br><br>Tips: User-friendly messages. Log details internally.
+
+
+#### Caching Strategies
+
+#### ---
+
+#### Usage: Store responses or data (redis, memcached).<br><br>Tips: Set TTL. Invalidate on updates.
 
 
 ### 10. Data Science Concepts (10)
 
-### Data Frames
+#### Data Frames
 
-### ---
+#### ---
 
-### Usage: Tabular data manipulation (pandas).<br><br>Tips: Vectorized operations over loops. Handle missing values early.
-
-
-### Array Broadcasting
-
-### ---
-
-### Usage: Operate on arrays of different shapes (NumPy).<br><br>Tips: Understand rules to avoid errors. Efficient computations.
+#### Usage: Tabular data manipulation (pandas).<br><br>Tips: Vectorized operations over loops. Handle missing values early.
 
 
-### Statistical Distributions
+#### Array Broadcasting
 
-### ---
+#### ---
 
-### Usage: Model data (scipy.stats).<br><br>Tips: Fit parameters. Use for simulations.
-
-
-### Machine Learning Pipelines
-
-### ---
-
-### Usage: Chain preprocessing and models (scikit-learn).<br><br>Tips: Cross-validation. Hyperparameter tuning.
+#### Usage: Operate on arrays of different shapes (NumPy).<br><br>Tips: Understand rules to avoid errors. Efficient computations.
 
 
-### Feature Engineering
+#### Statistical Distributions
 
-### ---
+#### ---
 
-### Usage: Create new features from raw data.<br><br>Tips: Domain knowledge key. Normalize/scale.
-
-
-### Model Evaluation Metrics
-
-### ---
-
-### Usage: Accuracy, precision, recall, F1.<br><br>Tips: Choose based on problem (imbalanced classes).
+#### Usage: Model data (scipy.stats).<br><br>Tips: Fit parameters. Use for simulations.
 
 
-### Dimensionality Reduction
+#### Machine Learning Pipelines
 
-### ---
+#### ---
 
-### Usage: PCA, t-SNE for lower dimensions.<br><br>Tips: Visualize high-dim data. Reduce noise.
-
-
-### Time Series Analysis
-
-### ---
-
-### Usage: Handle sequential data (pandas, statsmodels).<br><br>Tips: Stationarity checks. ARIMA models.
+#### Usage: Chain preprocessing and models (scikit-learn).<br><br>Tips: Cross-validation. Hyperparameter tuning.
 
 
-### Big Data Handling
+#### Feature Engineering
 
-### ---
+#### ---
 
-### Usage: Dask or PySpark for large datasets.<br><br>Tips: Parallel computing. Lazy evaluation.
+#### Usage: Create new features from raw data.<br><br>Tips: Domain knowledge key. Normalize/scale.
 
 
-### Visualization Best Practices
+#### Model Evaluation Metrics
 
-### ---
+#### ---
 
-### Usage: Matplotlib, Seaborn for plots.<br><br>Tips: Clear labels. Avoid chartjunk.
+#### Usage: Accuracy, precision, recall, F1.<br><br>Tips: Choose based on problem (imbalanced classes).
+
+
+#### Dimensionality Reduction
+
+#### ---
+
+#### Usage: PCA, t-SNE for lower dimensions.<br><br>Tips: Visualize high-dim data. Reduce noise.
+
+
+#### Time Series Analysis
+
+#### ---
+
+#### Usage: Handle sequential data (pandas, statsmodels).<br><br>Tips: Stationarity checks. ARIMA models.
+
+
+#### Big Data Handling
+
+#### ---
+
+#### Usage: Dask or PySpark for large datasets.<br><br>Tips: Parallel computing. Lazy evaluation.
+
+
+#### Visualization Best Practices
+
+#### ---
+
+#### Usage: Matplotlib, Seaborn for plots.<br><br>Tips: Clear labels. Avoid chartjunk.
 
 
 ### 11. Concurrency & Parallelism (10)
 
-### Threading Module
+#### Threading Module
 
-### ---
+#### ---
 
-### Usage: Concurrent execution for I/O-bound tasks.<br><br>Tips: Use locks for shared data. GIL limits CPU benefits.
-
-
-### Multiprocessing
-
-### ---
-
-### Usage: Parallel processes for CPU-bound work.<br><br>Tips: Pool for task distribution. Share data via queues.
+#### Usage: Concurrent execution for I/O-bound tasks.<br><br>Tips: Use locks for shared data. GIL limits CPU benefits.
 
 
-### Asyncio Basics
+#### Multiprocessing
 
-### ---
+#### ---
 
-### Usage: Event loop for async programming.<br><br>Tips: Await coroutines. Gather for concurrent tasks.
-
-
-### Futures & Tasks
-
-### ---
-
-### Usage: Represent future results in asyncio.<br><br>Tips: Cancel if needed. Handle exceptions.
+#### Usage: Parallel processes for CPU-bound work.<br><br>Tips: Pool for task distribution. Share data via queues.
 
 
-### Synchronization Primitives
+#### Asyncio Basics
 
-### ---
+#### ---
 
-### Usage: Locks, semaphores, events.<br><br>Tips: Prevent race conditions. Use with caution.
-
-
-### Actor Model
-
-### ---
-
-### Usage: Message-passing concurrency (pykka).<br><br>Tips: Isolation reduces bugs. Scalable design.
+#### Usage: Event loop for async programming.<br><br>Tips: Await coroutines. Gather for concurrent tasks.
 
 
-### Parallel Map
+#### Futures & Tasks
 
-### ---
+#### ---
 
-### Usage: Apply function in parallel (joblib, multiprocessing).<br><br>Tips: For embarrassingly parallel tasks.
-
-
-### Distributed Computing
-
-### ---
-
-### Usage: Ray or Dask for clusters.<br><br>Tips: Handle node failures. Optimize data transfer.
+#### Usage: Represent future results in asyncio.<br><br>Tips: Cancel if needed. Handle exceptions.
 
 
-### Greenlets
+#### Synchronization Primitives
 
-### ---
+#### ---
 
-### Usage: Lightweight coroutines (gevent).<br><br>Tips: Monkey-patch for async I/O.
+#### Usage: Locks, semaphores, events.<br><br>Tips: Prevent race conditions. Use with caution.
 
 
-### Queue Patterns
+#### Actor Model
 
-### ---
+#### ---
 
-### Usage: Producer-consumer with queue module.<br><br>Tips: Thread-safe communication. Set maxsize.
+#### Usage: Message-passing concurrency (pykka).<br><br>Tips: Isolation reduces bugs. Scalable design.
+
+
+#### Parallel Map
+
+#### ---
+
+#### Usage: Apply function in parallel (joblib, multiprocessing).<br><br>Tips: For embarrassingly parallel tasks.
+
+
+#### Distributed Computing
+
+#### ---
+
+#### Usage: Ray or Dask for clusters.<br><br>Tips: Handle node failures. Optimize data transfer.
+
+
+#### Greenlets
+
+#### ---
+
+#### Usage: Lightweight coroutines (gevent).<br><br>Tips: Monkey-patch for async I/O.
+
+
+#### Queue Patterns
+
+#### ---
+
+#### Usage: Producer-consumer with queue module.<br><br>Tips: Thread-safe communication. Set maxsize.
 
 
 ### 12. File & I/O Concepts (10)
 
-### File Modes
+#### File Modes
 
-### ---
+#### ---
 
-### Usage: r, w, a, b for reading/writing.<br><br>Tips: Use with open as context manager.
-
-
-### CSV Handling
-
-### ---
-
-### Usage: Read/write delimited files (csv module).<br><br>Tips: DictReader for headers. Quote fields properly.
+#### Usage: r, w, a, b for reading/writing.<br><br>Tips: Use with open as context manager.
 
 
-### JSON Serialization
+#### CSV Handling
 
-### ---
+#### ---
 
-### Usage: Dump/load objects (json module).<br><br>Tips: Custom encoders for complex types.
-
-
-### Pickling
-
-### ---
-
-### Usage: Serialize Python objects (pickle).<br><br>Tips: Version compatibility. Security risks with untrusted data.
+#### Usage: Read/write delimited files (csv module).<br><br>Tips: DictReader for headers. Quote fields properly.
 
 
-### Pathlib
+#### JSON Serialization
 
-### ---
+#### ---
 
-### Usage: Object-oriented filesystem paths.<br><br>Tips: Preferred over os.path. Cross-platform.
-
-
-### Temporary Files
-
-### ---
-
-### Usage: Create temp files/dirs (tempfile).<br><br>Tips: Auto-cleanup with context managers.
+#### Usage: Dump/load objects (json module).<br><br>Tips: Custom encoders for complex types.
 
 
-### Compression
+#### Pickling
 
-### ---
+#### ---
 
-### Usage: gzip, zipfile for archiving.<br><br>Tips: Stream large files. Check integrity.
-
-
-### Encoding Handling
-
-### ---
-
-### Usage: Specify utf-8, etc. in open.<br><br>Tips: Handle UnicodeDecodeError. Use io module.
+#### Usage: Serialize Python objects (pickle).<br><br>Tips: Version compatibility. Security risks with untrusted data.
 
 
-### Atomic Writes
+#### Pathlib
 
-### ---
+#### ---
 
-### Usage: Write to temp then rename.<br><br>Tips: Prevent partial files on crash.
+#### Usage: Object-oriented filesystem paths.<br><br>Tips: Preferred over os.path. Cross-platform.
 
 
-### Directory Traversal
+#### Temporary Files
 
-### ---
+#### ---
 
-### Usage: os.walk or pathlib.rglob.<br><br>Tips: Filter patterns. Handle symlinks.
+#### Usage: Create temp files/dirs (tempfile).<br><br>Tips: Auto-cleanup with context managers.
+
+
+#### Compression
+
+#### ---
+
+#### Usage: gzip, zipfile for archiving.<br><br>Tips: Stream large files. Check integrity.
+
+
+#### Encoding Handling
+
+#### ---
+
+#### Usage: Specify utf-8, etc. in open.<br><br>Tips: Handle UnicodeDecodeError. Use io module.
+
+
+#### Atomic Writes
+
+#### ---
+
+#### Usage: Write to temp then rename.<br><br>Tips: Prevent partial files on crash.
+
+
+#### Directory Traversal
+
+#### ---
+
+#### Usage: os.walk or pathlib.rglob.<br><br>Tips: Filter patterns. Handle symlinks.
 
 
 ### 13. Networking Concepts (10)
 
-### Socket Programming
+#### Socket Programming
 
-### ---
+#### ---
 
-### Usage: Low-level network communication (socket module).<br><br>Tips: Bind, listen, accept for servers.
-
-
-### HTTP Requests
-
-### ---
-
-### Usage: Send GET/POST (requests library).<br><br>Tips: Handle timeouts. Session for cookies.
+#### Usage: Low-level network communication (socket module).<br><br>Tips: Bind, listen, accept for servers.
 
 
-### URL Parsing
+#### HTTP Requests
 
-### ---
+#### ---
 
-### Usage: Break down URLs (urllib.parse).<br><br>Tips: Encode query params. Join paths safely.
-
-
-### Email Sending
-
-### ---
-
-### Usage: SMTP for outgoing mail (smtplib).<br><br>Tips: Use secure connections. MIME for attachments.
+#### Usage: Send GET/POST (requests library).<br><br>Tips: Handle timeouts. Session for cookies.
 
 
-### FTP Clients
+#### URL Parsing
 
-### ---
+#### ---
 
-### Usage: File transfer (ftplib).<br><br>Tips: Passive mode for firewalls.
-
-
-### DNS Resolution
-
-### ---
-
-### Usage: Get IP from hostname (socket.gethostbyname).<br><br>Tips: Cache results. Handle failures.
+#### Usage: Break down URLs (urllib.parse).<br><br>Tips: Encode query params. Join paths safely.
 
 
-### Proxy Handling
+#### Email Sending
 
-### ---
+#### ---
 
-### Usage: Route through proxies in requests.<br><br>Tips: Environment variables or explicit.
-
-
-### SSL/TLS
-
-### ---
-
-### Usage: Secure sockets (ssl module).<br><br>Tips: Verify certificates. Avoid self-signed in prod.
+#### Usage: SMTP for outgoing mail (smtplib).<br><br>Tips: Use secure connections. MIME for attachments.
 
 
-### Web Scraping Ethics
+#### FTP Clients
 
-### ---
+#### ---
 
-### Usage: Respect robots.txt, rate limits.<br><br>Tips: Use headers to identify. Cache pages.
+#### Usage: File transfer (ftplib).<br><br>Tips: Passive mode for firewalls.
 
 
-### API Rate Limiting
+#### DNS Resolution
 
-### ---
+#### ---
 
-### Usage: Throttle calls to avoid bans.<br><br>Tips: Sleep between requests. Exponential backoff.
+#### Usage: Get IP from hostname (socket.gethostbyname).<br><br>Tips: Cache results. Handle failures.
+
+
+#### Proxy Handling
+
+#### ---
+
+#### Usage: Route through proxies in requests.<br><br>Tips: Environment variables or explicit.
+
+
+#### SSL/TLS
+
+#### ---
+
+#### Usage: Secure sockets (ssl module).<br><br>Tips: Verify certificates. Avoid self-signed in prod.
+
+
+#### Web Scraping Ethics
+
+#### ---
+
+#### Usage: Respect robots.txt, rate limits.<br><br>Tips: Use headers to identify. Cache pages.
+
+
+#### API Rate Limiting
+
+#### ---
+
+#### Usage: Throttle calls to avoid bans.<br><br>Tips: Sleep between requests. Exponential backoff.
 
 
 ### 14. Database Concepts (10)
 
-### SQLAlchemy ORM
+#### SQLAlchemy ORM
 
-### ---
+#### ---
 
-### Usage: Object-relational mapping for databases.<br><br>Tips: Session management. Lazy loading.
-
-
-### Connection Pooling
-
-### ---
-
-### Usage: Reuse database connections.<br><br>Tips: Reduce overhead. Set min/max sizes.
+#### Usage: Object-relational mapping for databases.<br><br>Tips: Session management. Lazy loading.
 
 
-### Transactions
+#### Connection Pooling
 
-### ---
+#### ---
 
-### Usage: Atomic operations with commit/rollback.<br><br>Tips: Use context managers. Isolation levels.
-
-
-### NoSQL Integration
-
-### ---
-
-### Usage: MongoDB with pymongo.<br><br>Tips: Schema-less design. Indexing for queries.
+#### Usage: Reuse database connections.<br><br>Tips: Reduce overhead. Set min/max sizes.
 
 
-### Query Optimization
+#### Transactions
 
-### ---
+#### ---
 
-### Usage: Explain plans, indexes.<br><br>Tips: Avoid N+1 queries. Batch operations.
-
-
-### Migrations
-
-### ---
-
-### Usage: Alembic for schema changes.<br><br>Tips: Version control database. Test thoroughly.
+#### Usage: Atomic operations with commit/rollback.<br><br>Tips: Use context managers. Isolation levels.
 
 
-### Caching Queries
+#### NoSQL Integration
 
-### ---
+#### ---
 
-### Usage: Store results in redis.<br><br>Tips: Invalidate on data change. TTL.
-
-
-### Sharding
-
-### ---
-
-### Usage: Distribute data across servers.<br><br>Tips: Consistent hashing. For scalability.
+#### Usage: MongoDB with pymongo.<br><br>Tips: Schema-less design. Indexing for queries.
 
 
-### ACID Properties
+#### Query Optimization
 
-### ---
+#### ---
 
-### Usage: Ensure reliable transactions.<br><br>Tips: Understand trade-offs in NoSQL.
+#### Usage: Explain plans, indexes.<br><br>Tips: Avoid N+1 queries. Batch operations.
 
 
-### Backup Strategies
+#### Migrations
 
-### ---
+#### ---
 
-### Usage: Regular dumps or replication.<br><br>Tips: Automate. Test restores.
+#### Usage: Alembic for schema changes.<br><br>Tips: Version control database. Test thoroughly.
+
+
+#### Caching Queries
+
+#### ---
+
+#### Usage: Store results in redis.<br><br>Tips: Invalidate on data change. TTL.
+
+
+#### Sharding
+
+#### ---
+
+#### Usage: Distribute data across servers.<br><br>Tips: Consistent hashing. For scalability.
+
+
+#### ACID Properties
+
+#### ---
+
+#### Usage: Ensure reliable transactions.<br><br>Tips: Understand trade-offs in NoSQL.
+
+
+#### Backup Strategies
+
+#### ---
+
+#### Usage: Regular dumps or replication.<br><br>Tips: Automate. Test restores.
 
 
 ### 15. DevOps & Deployment (10)
 
-### Containerization
+#### Containerization
 
-### ---
+#### ---
 
-### Usage: Docker for isolated environments.<br><br>Tips: Multi-stage builds. .dockerignore.
-
-
-### CI/CD Pipelines
-
-### ---
-
-### Usage: Automate build/test/deploy (GitHub Actions).<br><br>Tips: Parallel jobs. Artifact caching.
+#### Usage: Docker for isolated environments.<br><br>Tips: Multi-stage builds. .dockerignore.
 
 
-### Configuration Management
+#### CI/CD Pipelines
 
-### ---
+#### ---
 
-### Usage: Environment vars, config files.<br><br>Tips: 12-factor app principles. Secrets management.
-
-
-### Monitoring
-
-### ---
-
-### Usage: Prometheus, Sentry for metrics/errors.<br><br>Tips: Set alerts. Dashboards.
+#### Usage: Automate build/test/deploy (GitHub Actions).<br><br>Tips: Parallel jobs. Artifact caching.
 
 
-### Logging Aggregation
+#### Configuration Management
 
-### ---
+#### ---
 
-### Usage: ELK stack or Fluentd.<br><br>Tips: Structured logs. Correlation IDs.
-
-
-### Blue-Green Deployment
-
-### ---
-
-### Usage: Switch between environments for zero-downtime.<br><br>Tips: Router configuration. Rollback ease.
+#### Usage: Environment vars, config files.<br><br>Tips: 12-factor app principles. Secrets management.
 
 
-### Serverless
+#### Monitoring
 
-### ---
+#### ---
 
-### Usage: AWS Lambda, Google Cloud Functions.<br><br>Tips: Cold start mitigation. Event-driven.
-
-
-### Infrastructure as Code
-
-### ---
-
-### Usage: Terraform or Pulumi.<br><br>Tips: Version control infra. Idempotent.
+#### Usage: Prometheus, Sentry for metrics/errors.<br><br>Tips: Set alerts. Dashboards.
 
 
-### Auto-Scaling
+#### Logging Aggregation
 
-### ---
+#### ---
 
-### Usage: Adjust resources based on load.<br><br>Tips: Metrics-based triggers. Hysteresis.
+#### Usage: ELK stack or Fluentd.<br><br>Tips: Structured logs. Correlation IDs.
 
 
-### Backup & Disaster Recovery
+#### Blue-Green Deployment
 
-### ---
+#### ---
 
-### Usage: Regular snapshots, offsite storage.<br><br>Tips: RTO/RPO definitions. Drills.
+#### Usage: Switch between environments for zero-downtime.<br><br>Tips: Router configuration. Rollback ease.
+
+
+#### Serverless
+
+#### ---
+
+#### Usage: AWS Lambda, Google Cloud Functions.<br><br>Tips: Cold start mitigation. Event-driven.
+
+
+#### Infrastructure as Code
+
+#### ---
+
+#### Usage: Terraform or Pulumi.<br><br>Tips: Version control infra. Idempotent.
+
+
+#### Auto-Scaling
+
+#### ---
+
+#### Usage: Adjust resources based on load.<br><br>Tips: Metrics-based triggers. Hysteresis.
+
+
+#### Backup & Disaster Recovery
+
+#### ---
+
+#### Usage: Regular snapshots, offsite storage.<br><br>Tips: RTO/RPO definitions. Drills.
 
 
 ### 16. Advanced Language Features (10)
 
-### Annotations
+#### Annotations
 
-### ---
+#### ---
 
-### Usage: Function annotations beyond types.<br><br>Tips: Custom metadata. Inspect with __annotations__.
-
-
-### Async Generators
-
-### ---
-
-### Usage: Yield in async functions.<br><br>Tips: For streaming async data. Async for loops.
+#### Usage: Function annotations beyond types.<br><br>Tips: Custom metadata. Inspect with __annotations__.
 
 
-### Pattern Matching
+#### Async Generators
 
-### ---
+#### ---
 
-### Usage: Match statement (Python 3.10+).<br><br>Tips: Structural matching. Guards.
-
-
-### Walrus Operator
-
-### ---
-
-### Usage: Assignment expressions (:=).<br><br>Tips: In if/while conditions. Avoid overuse.
+#### Usage: Yield in async functions.<br><br>Tips: For streaming async data. Async for loops.
 
 
-### F-Strings
+#### Pattern Matching
 
-### ---
+#### ---
 
-### Usage: Formatted string literals.<br><br>Tips: Debug with = specifier. Efficient formatting.
-
-
-### Enum Classes
-
-### ---
-
-### Usage: Define enumerations.<br><br>Tips: Type-safe constants. Auto values.
+#### Usage: Match statement (Python 3.10+).<br><br>Tips: Structural matching. Guards.
 
 
-### Named Expressions
+#### Walrus Operator
 
-### ---
+#### ---
 
-### Usage: Assign in comprehensions.<br><br>Tips: Reuse computations. Readability.
-
-
-### Positional-Only Parameters
-
-### ---
-
-### Usage: / in function defs.<br><br>Tips: Prevent keyword misuse. API stability.
+#### Usage: Assignment expressions (:=).<br><br>Tips: In if/while conditions. Avoid overuse.
 
 
-### Union Types
+#### F-Strings
 
-### ---
+#### ---
+
+#### Usage: Formatted string literals.<br><br>Tips: Debug with = specifier. Efficient formatting.
+
+
+#### Enum Classes
+
+#### ---
+
+#### Usage: Define enumerations.<br><br>Tips: Type-safe constants. Auto values.
+
+
+#### Named Expressions
+
+#### ---
+
+#### Usage: Assign in comprehensions.<br><br>Tips: Reuse computations. Readability.
+
+
+#### Positional-Only Parameters
+
+#### ---
+
+#### Usage: / in function defs.<br><br>Tips: Prevent keyword misuse. API stability.
+
+
+#### Union Types
+
+#### ---
 
 **Usage:** typing.Union or | operator.
 
@@ -1256,83 +1256,83 @@ Python is a versatile, high-level programming language prized for its readabilit
 
 
 
-### Structural Pattern Matching
+#### Structural Pattern Matching
 
-### ---
+#### ---
 
-### Usage: Match classes, sequences.<br><br>Tips: Wildcards, captures. Powerful destructuring.
+#### Usage: Match classes, sequences.<br><br>Tips: Wildcards, captures. Powerful destructuring.
 
 
 ### 17. Ecosystem & Community (10)
 
-### PyPI
+#### PyPI
 
-### ---
+#### ---
 
-### Usage: Python Package Index for distributions.<br><br>Tips: Search before building. Check downloads/stars.
-
-
-### Virtualenvwrapper
-
-### ---
-
-### Usage: Manage multiple virtualenvs.<br><br>Tips: Workon, mkvirtualenv commands.
+#### Usage: Python Package Index for distributions.<br><br>Tips: Search before building. Check downloads/stars.
 
 
-### Jupyter Notebooks
+#### Virtualenvwrapper
 
-### ---
+#### ---
 
-### Usage: Interactive computing.<br><br>Tips: Version control with nbdime. Extensions.
-
-
-### Python Versions
-
-### ---
-
-### Usage: Manage with pyenv.<br><br>Tips: Pin versions in projects. Migrate timely.
+#### Usage: Manage multiple virtualenvs.<br><br>Tips: Workon, mkvirtualenv commands.
 
 
-### Community Events
+#### Jupyter Notebooks
 
-### ---
+#### ---
 
-### Usage: PyCon, local meetups.<br><br>Tips: Network, learn. Contribute talks.
-
-
-### Open Source Contribution
-
-### ---
-
-### Usage: Fork, PR on GitHub.<br><br>Tips: Follow guidelines. Start small.
+#### Usage: Interactive computing.<br><br>Tips: Version control with nbdime. Extensions.
 
 
-### PEP Process
+#### Python Versions
 
-### ---
+#### ---
 
-### Usage: Propose enhancements.<br><br>Tips: Discuss on mailing lists. Implement prototypes.
-
-
-### Python Enhancement Proposals
-
-### ---
-
-### Usage: Standards for language evolution.<br><br>Tips: Read key PEPs (8, 20, 484).
+#### Usage: Manage with pyenv.<br><br>Tips: Pin versions in projects. Migrate timely.
 
 
-### Third-Party Libraries
+#### Community Events
 
-### ---
+#### ---
 
-### Usage: Extend functionality.<br><br>Tips: Vet for maintenance. Pin versions.
+#### Usage: PyCon, local meetups.<br><br>Tips: Network, learn. Contribute talks.
 
 
-### Python Jobs & Careers
+#### Open Source Contribution
 
-### ---
+#### ---
 
-### Usage: Skills in demand.<br><br>Tips: Build portfolio. Certifications.
+#### Usage: Fork, PR on GitHub.<br><br>Tips: Follow guidelines. Start small.
+
+
+#### PEP Process
+
+#### ---
+
+#### Usage: Propose enhancements.<br><br>Tips: Discuss on mailing lists. Implement prototypes.
+
+
+#### Python Enhancement Proposals
+
+#### ---
+
+#### Usage: Standards for language evolution.<br><br>Tips: Read key PEPs (8, 20, 484).
+
+
+#### Third-Party Libraries
+
+#### ---
+
+#### Usage: Extend functionality.<br><br>Tips: Vet for maintenance. Pin versions.
+
+
+#### Python Jobs & Careers
+
+#### ---
+
+#### Usage: Skills in demand.<br><br>Tips: Build portfolio. Certifications.
 
 
 ## Tips and Best Practices
