@@ -34,18 +34,13 @@ Perfect for:
 - [101-Terraform-GCP-Commands](cloud-services/101-Terraform-GCP-Commands.md)
 
 ### Data Science & ML
-- [101-ChromaDB-Commands](data-science/101-ChromaDB-Commands.md)
-- [101-Data-Engineering-Pipeline-Concepts](data-science/101-Data-Engineering-Pipeline-Concepts.md) – **265+ concepts** across full data → ML lifecycle
-- [101-DuckDB-Commands](data-science/101-DuckDB-Commands.md)
-- [101-Elasticsearch-Commands](data-science/101-Elasticsearch-Commands.md)
-- [101-MongoDB-Commands](data-science/101-MongoDB-Commands.md)
-- [101-Pinecone-Commands](data-science/101-Pinecone-Commands.md)
-- [101-PyTorch-Commands](data-science/101-PyTorch-Commands.md)
-- [101-PyTorch-Lightning-Commands](data-science/101-PyTorch-Lightning-Commands.md)
-- [101-Scikit-learn-Commands](data-science/101-Scikit-learn-Commands.md)
-- [101-XLA-Commands](data-science/101-XLA-Commands.md)
+### Data Visualization
 
+- [Tableau Commands](data-visualization/101-Tableau-Commands.md)
 ### Databases
+
+### Data Visualization
+
 - [SQL Commands](databases/101-SQL-Commands.md)
 ### DevOps & Infrastructure
 - [101-Ansible-Commands](devops/101-Ansible-Commands.md)
