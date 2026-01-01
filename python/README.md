@@ -1,31 +1,26 @@
 # Python Command Cheat Sheets
 
-This directory contains cheat sheets for Python and related libraries.
+Python-related command and concept reference materials.
 
 ## Available Cheat Sheets
 
-- [101 Django Commands](101-Django-Commands.md) - Essential commands for Django web framework
-- [101 FastAPI Commands](101-FastAPI-Commands.md) - Essential commands for FastAPI framework
-- [101 Flask Commands](101-Flask-Commands.md) - Essential commands for Flask framework
-- [101 Python Async Commands](101-Python-Async-Commands.md) - Essential commands for Python async programming
-- [101 Python CLI Scripting Commands](101-Python-CLI-Scripting-Commands.md) - Essential commands for Python CLI scripting
-- [101 Python Commands](101-Python-Commands.md) - Essential commands, functions, and patterns for Python
-- [101 Python Debugging Commands](101-Python-Debugging-Commands.md) - Essential commands for Python debugging
-- [101 Python Testing Commands](101-Python-Testing-Commands.md) - Essential commands for Python testing
+- [101 Python Async Commands](101-Python-Async-Commands.md) - Asynchronous programming essentials
+- [101 Python CLI Scripting Commands](101-Python-CLI-Scripting-Commands.md) - Building command-line tools
+- [101 Python Commands](101-Python-Commands.md) - Core Python syntax and commands
+- [101 Python Concepts](101-Python-Concepts.md) - Key concepts, best practices, and patterns
+- [101 Python Debugging Commands](101-Python-Debugging-Commands.md) - Debugging techniques and tools
+- [101 Python Testing Commands](101-Python-Testing-Commands.md) - Testing frameworks and practices
+- [101 Django Commands](101-Django-Commands.md) - Django framework commands
+- [101 FastAPI Commands](101-FastAPI-Commands.md) - FastAPI web development
+- [101 Flask Commands](101-Flask-Commands.md) - Flask web framework essentials
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential Python commands and functions. Each cheat sheet includes:
-
-- Command syntax and usage
-- Common use cases and examples
-- Tips and best practices
-- Additional resources for further learning
+These cheat sheets provide quick reference for the most commonly used and essential commands...
 
 ## Target Audience
 
-- Python developers
+- Developers
 - Data scientists
-- Machine learning engineers
-- Automation specialists
-- Students and learners
+- DevOps engineers
+- Anyone working with Python

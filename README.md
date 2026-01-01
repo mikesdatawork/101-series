@@ -69,14 +69,7 @@ Perfect for:
 - [101-VS-Code-Commands](ides/101-VS-Code-Commands.md)
 
 ### Python Ecosystem
-- [101-Django-Commands](python/101-Django-Commands.md)
-- [101-FastAPI-Commands](python/101-FastAPI-Commands.md)
-- [101-Flask-Commands](python/101-Flask-Commands.md)
-- [101-Python-Async-Commands](python/101-Python-Async-Commands.md)
-- [101-Python-CLI-Scripting-Commands](python/101-Python-CLI-Scripting-Commands.md)
-- [101-Python-Debugging-Commands](python/101-Python-Debugging-Commands.md)
-- [101-Python-Testing-Commands](python/101-Python-Testing-Commands.md)
-
+- [Python Concepts](python/101-Python-Concepts.md)
 ### Web Development
 - [101-HTML-Commands](web-development/101-HTML-Commands.md)
 - [101-CSS-Commands](web-development/101-CSS-Commands.md)
