@@ -1414,55 +1414,20 @@ Python is a versatile, high-level programming language prized for its readabilit
 | GUI | Graphical User Interface |
 
 ### 3. Key Concepts
-
-| EAFP | Easier to Ask Forgiveness than Permission |
-| --- | --- |
-| Prefer try/except over explicit precondition checks for common operations.
-
-| LBYL | Look Before You Leap |
-| --- | --- |
-| Check conditions explicitly before proceeding; contrasts with EAFP.
-
-| Pythonic | Code that follows Python idioms and style |
-| --- | --- |
-| Emphasizes readability, simplicity, and use of language features.
-
-| Truthiness | Boolean evaluation of non-boolean objects |
-| --- | --- |
-| Empty sequences/strings are False; non-empty/non-zero are True.
-
-| Everything is an Object | All entities have methods and attributes |
-| --- | --- |
-| Functions, classes, modules, and types are first-class objects.
-
-| Namespaces | Scoping mechanism for names |
-| --- | --- |
-| locals(), globals(), builtins() separate name resolution.
-
-| Dynamic Typing | Types resolved at runtime |
-| --- | --- |
-| No type declarations; variables can rebind to any type.
-
-| Strong Typing | Limited implicit type coercion |
-| --- | --- |
-| Operations require compatible types (no auto-conversion).
-
-| Introspection | Runtime examination of objects |
-| --- | --- |
-| Use dir(), type(), vars(), getattr() for metadata.
-
-| Reflection | Runtime modification of structure/behavior |
-| --- | --- |
-| setattr(), exec(), dynamic imports alter code.
-
-| Duck Typing | Interface over explicit type |
-| --- | --- |
-| Focus on behavior; no need for inheritance.
-
-| Batteries Included | Comprehensive standard library |
-| --- | --- |
-| Built-in modules handle many common tasks.
-
+| Concept | Description |
+|---------|-------------|
+| EAFP | Prefer try/except over explicit precondition checks for common operations. |
+| LBYL | Check conditions explicitly before proceeding; contrasts with EAFP. |
+| Pythonic | Code that follows Python idioms and style. Emphasizes readability, simplicity, and use of language features. |
+| Truthiness | Boolean evaluation of non-boolean objects. Empty sequences/strings are False; non-empty/non-zero are True. |
+| Everything is an Object | All entities have methods and attributes. Functions, classes, modules, and types are first-class objects. |
+| Namespaces | Scoping mechanism for names. locals(), globals(), builtins() separate name resolution. |
+| Dynamic Typing | Types resolved at runtime. No type declarations; variables can rebind to any type. |
+| Strong Typing | Limited implicit type coercion. Operations require compatible types (no auto-conversion). |
+| Introspection | Runtime examination of objects. Use dir(), type(), vars(), getattr() for metadata. |
+| Reflection | Runtime modification of structure/behavior. setattr(), exec(), dynamic imports alter code. |
+| Duck Typing | Interface over explicit type. Focus on behavior; no need for inheritance. |
+| Batteries Included | Comprehensive standard library. Built-in modules handle many common tasks. |
 ### 4. Data Model
 | Term | Description |
 |------|-------------|
