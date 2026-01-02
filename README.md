@@ -41,3 +41,6 @@ Perfect for:
 ### Spreadsheets
 
 - [Excel Commands](spreadsheets/101-Excel-Commands.md)
+
+### Operating Systems
+- [GTK3 Commands](operating-systems/101-GTK3-Commands.md)
