@@ -5,6 +5,7 @@ Collection of cheat sheets for operating system-specific commands, tools, and fr
 ## Available Cheat Sheets
 
 - [101 GTK3 Commands](101-GTK3-Commands.md) - Essential APIs and functions for building GUIs with the GTK3 toolkit
+- [101 GTK4 Commands](101-GTK4-Commands.md) - Modern APIs for GTK4 with event controllers and layout managers
 
 ## Purpose
 
