@@ -45,3 +45,4 @@ Perfect for:
 ### Operating Systems
 - [GTK3 Commands](operating-systems/101-GTK3-Commands.md)
 - [GTK4 Commands](operating-systems/101-GTK4-Commands.md)
+- [Qt6 Commands](operating-systems/101-Qt6-Commands.md)

@@ -6,6 +6,7 @@ Collection of cheat sheets for operating system-specific commands, tools, and fr
 
 - [101 GTK3 Commands](101-GTK3-Commands.md) - Essential APIs and functions for building GUIs with the GTK3 toolkit
 - [101 GTK4 Commands](101-GTK4-Commands.md) - Modern APIs for GTK4 with event controllers and layout managers
+- [101 Qt6 Commands](101-Qt6-Commands.md) - Core classes and functions for Qt6 Widgets GUI development
 
 ## Purpose
 
