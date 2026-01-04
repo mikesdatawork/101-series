@@ -47,6 +47,7 @@ Perfect for:
 
 - [Jenkins Commands](devops/101-Jenkins-Commands.md)
 - [Kubernetes Commands](devops/101-Kubernetes-Commands.md)
+- [Kubernetes Commands](devops/101-Kubernetes-Commands.md)
 - [GTK3 Commands](operating-systems/101-GTK3-Commands.md)
 - [GTK4 Commands](operating-systems/101-GTK4-Commands.md)
 - [Qt6 Commands](operating-systems/101-Qt6-Commands.md)
