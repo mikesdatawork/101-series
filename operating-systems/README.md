@@ -1,22 +1,24 @@
 # Operating Systems Command Cheat Sheets
 
-Collection of cheat sheets for operating system-specific commands, tools, and frameworks, with a focus on Linux utilities and GUI toolkits.
+Essential commands for operating systems administration, GUI development, and related tools in Linux environments.
 
 ## Available Cheat Sheets
 
-- [101 GTK3 Commands](101-GTK3-Commands.md) - Essential APIs and functions for building GUIs with the GTK3 toolkit
-- [101 GTK4 Commands](101-GTK4-Commands.md) - Modern APIs for GTK4 with event controllers and layout managers
-- [101 Qt6 Commands](101-Qt6-Commands.md) - Core classes and functions for Qt6 Widgets GUI development
-- [101 Flutter Commands](101-Flutter-Commands.md) - Essential widgets, state, navigation, and patterns for cross-platform GUI development
+- [Flutter Commands](101-Flutter-Commands.md) - Essential commands for building cross-platform apps with Flutter
+- [GTK3 Commands](101-GTK3-Commands.md) - Essential commands for GTK3 GUI toolkit development
+- [GTK4 Commands](101-GTK4-Commands.md) - Essential commands for modern GTK4 GUI toolkit development
+- [Qt6 Commands](101-Qt6-Commands.md) - Essential commands for cross-platform Qt6 GUI development
+- [RHCSA Commands](101-RHCSA-Commands.md) - Essential commands for Red Hat Certified System Administrator certification and tasks
 
 ## Purpose
 
-These cheat sheets provide quick reference for the most commonly used and essential commands in operating system environments, helping users efficiently manage systems, build interfaces, and automate tasks.
+These cheat sheets provide quick reference for the most commonly used and essential commands in operating systems management and development.
 
 ## Target Audience
 
-- System administrators maintaining Linux systems
-- Developers building OS-specific applications
-- GUI programmers creating desktop interfaces
-- Software engineers working with Linux toolkits
-- Anyone working with operating systems
+- System administrators
+- GUI developers
+- Linux engineers
+- DevOps professionals
+- Certification candidates
+
