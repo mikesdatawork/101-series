@@ -8,6 +8,7 @@ Essential commands for DevOps tools including CI/CD, container orchestration, co
 - [Kubernetes Commands](101-Kubernetes-Commands.md) - Essential kubectl and Helm commands for container orchestration
 - [Git DevOps Commands](101-Git-DevOps-Commands.md) - Advanced Git commands for DevOps workflows and GitOps
 - [Prometheus Commands](101-Prometheus-Commands.md) - Essential Prometheus and PromQL commands for monitoring and alerting
+- [Terraform Commands](101-Terraform-Commands.md) - Essential Terraform commands for Infrastructure as Code
 
 ## Purpose
 
