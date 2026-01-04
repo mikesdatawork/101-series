@@ -6,6 +6,7 @@ Essential commands for DevOps tools including CI/CD, container orchestration, co
 
 - [Jenkins Commands](101-Jenkins-Commands.md) - Essential commands for Jenkins CI/CD automation server
 - [Kubernetes Commands](101-Kubernetes-Commands.md) - Essential kubectl and Helm commands for container orchestration
+- [Git DevOps Commands](101-Git-DevOps-Commands.md) - Advanced Git commands for DevOps workflows and GitOps
 
 ## Purpose
 
