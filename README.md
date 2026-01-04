@@ -43,6 +43,9 @@ Perfect for:
 - [Excel Commands](spreadsheets/101-Excel-Commands.md)
 
 ### Operating Systems
+### DevOps Tools
+
+- [Jenkins Commands](devops/101-Jenkins-Commands.md)
 - [GTK3 Commands](operating-systems/101-GTK3-Commands.md)
 - [GTK4 Commands](operating-systems/101-GTK4-Commands.md)
 - [Qt6 Commands](operating-systems/101-Qt6-Commands.md)
